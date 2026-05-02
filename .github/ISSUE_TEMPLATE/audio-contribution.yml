@@ -20,11 +20,11 @@ body:
   - type: input
     id: existingTranscript
     attributes:
-      label: Existing Transcription
-      description: en-soap-001
+      label: Existing Transcript
+      description: Identifier of accompanying transcript if applicable (e.g. en-soap-001, de-emergency-004)
     validations:
       required: false
-      
+
   - type: dropdown
     id: workflow
     attributes:
