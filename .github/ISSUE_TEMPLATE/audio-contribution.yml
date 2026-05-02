@@ -1,0 +1,149 @@
+name: Audio Contribution
+description: Submit a recorded clinical scenario for the benchmark
+title: "[Audio] "
+labels: ["contribution", "audio"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for contributing audio! All recordings must be **synthetic scenarios with fictional patients**. Never upload real clinical encounters.
+
+  - type: input
+    id: language
+    attributes:
+      label: Language
+      description: ISO 639-1 code and dialect (e.g., en-US, de-DE, en-IN)
+      placeholder: en-US
+    validations:
+      required: true
+
+  - type: dropdown
+    id: workflow
+    attributes:
+      label: Clinical Workflow
+      options:
+        - soap
+        - hp
+        - emergency
+        - samplers
+        - intake
+        - followup
+        - discharge
+        - procedure
+        - radiology
+        - lab_review
+        - cardiology
+        - neurology
+        - pediatrics
+        - icu
+        - respiratory
+        - consult
+        - progress
+        - recommendations
+        - general
+    validations:
+      required: true
+
+  - type: dropdown
+    id: difficulty
+    attributes:
+      label: Difficulty
+      options:
+        - simple
+        - moderate
+        - complex
+    validations:
+      required: true
+
+  - type: dropdown
+    id: speaker_role
+    attributes:
+      label: Speaker Role
+      options:
+        - clinician monologue
+        - clinician-patient dialogue
+        - multi-provider
+    validations:
+      required: true
+
+  - type: input
+    id: num_speakers
+    attributes:
+      label: Number of Speakers
+      placeholder: "1"
+    validations:
+      required: true
+
+  - type: input
+    id: specialty
+    attributes:
+      label: Clinical Specialty
+      description: e.g., internal-medicine, cardiology, emergency-medicine
+      placeholder: internal-medicine
+    validations:
+      required: true
+
+  - type: textarea
+    id: audio_file
+    attributes:
+      label: Audio File
+      description: Drag and drop your audio file here. WAV preferred, FLAC or MP3 accepted. Max 10 minutes, under 25 MB.
+      placeholder: Drag audio file here
+    validations:
+      required: true
+
+  - type: textarea
+    id: transcript
+    attributes:
+      label: Transcript
+      description: Verbatim transcript of the recording. If you have a separate transcript file, attach it here instead.
+      placeholder: Paste transcript or drag file here
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_entities
+    attributes:
+      label: Expected Entities (optional)
+      description: |
+        If you can identify the clinical entities, list them here. Not required -- a reviewer can annotate later.
+        Format: Type: entity (code if known)
+      placeholder: |
+        Conditions: Essential hypertension (I10), Type 2 diabetes (E11.9)
+        Medications: Metformin 1000mg BID, Lisinopril 20mg daily
+        Allergies: Penicillin - rash
+        Vitals: BP 138/82, HR 76, Temp 98.6F
+    validations:
+      required: false
+
+  - type: input
+    id: recording_equipment
+    attributes:
+      label: Recording Equipment
+      description: Microphone model and recording software
+      placeholder: "Blue Yeti, Audacity"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: noise_conditions
+    attributes:
+      label: Noise Conditions
+      options:
+        - quiet room
+        - simulated hospital ambient
+        - moderate background noise
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Confirmations
+      options:
+        - label: This recording contains only fictional/synthetic content (no real patient data)
+          required: true
+        - label: I have the right to contribute this recording
+          required: true
+        - label: I agree to the CC BY-SA 4.0 license
+          required: true

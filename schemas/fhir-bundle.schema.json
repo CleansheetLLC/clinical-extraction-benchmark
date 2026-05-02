@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/cleansheet-llc/clinical-extraction-benchmark/schemas/fhir-bundle.schema.json",
+  "title": "Clinical Extraction Ground Truth Bundle",
+  "description": "Minimal validation schema for ground truth FHIR R4 Bundles in this benchmark. Not a full FHIR validator — validates structure and required fields for scoring.",
+  "type": "object",
+  "required": ["resourceType", "type", "entry", "meta"],
+  "properties": {
+    "resourceType": {
+      "const": "Bundle"
+    },
+    "type": {
+      "const": "collection"
+    },
+    "meta": {
+      "type": "object",
+      "required": ["source", "lastUpdated"],
+      "properties": {
+        "source": {
+          "type": "string",
+          "description": "Annotation provenance (e.g., 'manual-review-v1')"
+        },
+        "lastUpdated": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "tag": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "system": { "type": "string" },
+              "code": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "entry": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["resource"],
+        "properties": {
+          "resource": {
+            "type": "object",
+            "required": ["resourceType"],
+            "properties": {
+              "resourceType": {
+                "type": "string",
+                "enum": [
+                  "Patient",
+                  "Encounter",
+                  "Condition",
+                  "MedicationRequest",
+                  "MedicationStatement",
+                  "Observation",
+                  "AllergyIntolerance",
+                  "Procedure",
+                  "ServiceRequest",
+                  "FamilyMemberHistory",
+                  "Composition"
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

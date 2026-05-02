@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/cleansheet-llc/clinical-extraction-benchmark/schemas/transcript-metadata.schema.json",
+  "title": "Transcript Metadata",
+  "description": "Metadata accompanying each transcript in the benchmark.",
+  "type": "object",
+  "required": ["id", "language", "workflow", "source", "verified"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z]{2}-[a-z]+-[0-9]{3}$",
+      "description": "Unique ID: {lang}-{workflow}-{sequence}. Example: en-soap-001"
+    },
+    "language": {
+      "type": "string",
+      "enum": ["en", "de", "fr", "vi", "zh", "pl"],
+      "description": "ISO 639-1 language code"
+    },
+    "workflow": {
+      "type": "string",
+      "enum": [
+        "general", "soap", "hp", "emergency", "samplers",
+        "intake", "followup", "discharge", "procedure",
+        "radiology", "lab_review", "cardiology", "neurology",
+        "pediatrics", "icu", "respiratory", "consult",
+        "progress", "recommendations"
+      ]
+    },
+    "source": {
+      "type": "string",
+      "enum": ["original", "multimed", "n2c2", "united-medsyn", "contributed"],
+      "description": "Where the transcript came from"
+    },
+    "verified": {
+      "type": "boolean",
+      "description": "Has the transcript been verified against audio (if audio exists)?"
+    },
+    "audio_file": {
+      "type": ["string", "null"],
+      "description": "Relative path to audio file, or null if no audio"
+    },
+    "annotation_file": {
+      "type": "string",
+      "description": "Relative path to the expected FHIR Bundle"
+    },
+    "specialty": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Clinical specialties represented (e.g., ['cardiology', 'internal-medicine'])"
+    },
+    "entity_counts": {
+      "type": "object",
+      "description": "Expected entity counts by FHIR resource type (for quick reference)",
+      "properties": {
+        "Condition": { "type": "integer" },
+        "MedicationRequest": { "type": "integer" },
+        "MedicationStatement": { "type": "integer" },
+        "Observation": { "type": "integer" },
+        "AllergyIntolerance": { "type": "integer" },
+        "Procedure": { "type": "integer" },
+        "ServiceRequest": { "type": "integer" },
+        "FamilyMemberHistory": { "type": "integer" }
+      }
+    },
+    "annotators": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Who created/verified the FHIR annotation"
+    },
+    "difficulty": {
+      "type": "string",
+      "enum": ["simple", "moderate", "complex"],
+      "description": "Relative extraction difficulty"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Free-text notes about this scenario"
+    }
+  }
+}

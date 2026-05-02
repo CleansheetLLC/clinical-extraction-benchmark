@@ -1,0 +1,98 @@
+name: FHIR Annotation Contribution
+description: Submit a verified FHIR R4 annotation for an existing transcript
+title: "[Annotation] "
+labels: ["contribution", "annotation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for contributing a FHIR annotation! This is the most valuable contribution to the benchmark.
+
+        Please review the [annotation guidelines](../../docs/annotation-guidelines.md) before submitting.
+
+  - type: input
+    id: transcript_id
+    attributes:
+      label: Transcript ID
+      description: The ID of the transcript being annotated (e.g., en-soap-001)
+      placeholder: en-soap-001
+    validations:
+      required: true
+
+  - type: textarea
+    id: fhir_bundle
+    attributes:
+      label: FHIR R4 Bundle
+      description: |
+        Paste the FHIR R4 Bundle JSON, or drag and drop a .json file.
+        Use `schemas/template-bundle.json` as a starting point.
+      render: json
+      placeholder: |
+        {
+          "resourceType": "Bundle",
+          "type": "collection",
+          "meta": { ... },
+          "entry": [ ... ]
+        }
+    validations:
+      required: true
+
+  - type: textarea
+    id: entity_summary
+    attributes:
+      label: Entity Summary
+      description: Quick summary of what's in the annotation
+      placeholder: |
+        Conditions: 3 (E11.65, I10, E78.5)
+        Medications: 3 (metformin, lisinopril, atorvastatin)
+        Observations: 9 (5 vitals, 4 labs)
+        Allergies: 1 (penicillin)
+    validations:
+      required: true
+
+  - type: input
+    id: clinical_background
+    attributes:
+      label: Clinical Background
+      description: Brief note on your clinical domain experience (helps with reviewer assignment)
+      placeholder: "e.g., RN 5 years, medical coder, physician assistant"
+    validations:
+      required: true
+
+  - type: textarea
+    id: code_systems
+    attributes:
+      label: Code Systems Used
+      description: Which code systems did you use for coding?
+      placeholder: |
+        Conditions: ICD-10-CM
+        Medications: RxNorm
+        Observations: LOINC
+        Allergies: RxNorm + SNOMED CT
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Annotation Notes
+      description: Any ambiguities, judgment calls, or edge cases encountered during annotation
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: quality_checks
+    attributes:
+      label: Quality Checks
+      description: Please confirm before submitting
+      options:
+        - label: Every Condition has a valid ICD-10 code
+          required: true
+        - label: Every Medication has a valid RxNorm code
+          required: true
+        - label: Every Observation has a valid LOINC code
+          required: true
+        - label: No entities are annotated that are not explicitly stated in the transcript
+          required: true
+        - label: I agree to the CC BY-SA 4.0 license
+          required: true

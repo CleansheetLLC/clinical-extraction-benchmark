@@ -1,0 +1,4 @@
+# Audio files tracked by Git LFS
+audio/**/*.wav filter=lfs diff=lfs merge=lfs -text
+audio/**/*.flac filter=lfs diff=lfs merge=lfs -text
+audio/**/*.mp3 filter=lfs diff=lfs merge=lfs -text

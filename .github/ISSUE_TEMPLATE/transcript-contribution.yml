@@ -1,0 +1,117 @@
+name: Transcript Contribution
+description: Submit a scripted clinical transcript (no audio)
+title: "[Transcript] "
+labels: ["contribution", "transcript"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for contributing a transcript! All scenarios must be **scripted with fictional patients**. Never submit real clinical encounters.
+
+  - type: input
+    id: language
+    attributes:
+      label: Language
+      description: ISO 639-1 code and dialect (e.g., en-US, de-DE, fr-FR)
+      placeholder: en-US
+    validations:
+      required: true
+
+  - type: dropdown
+    id: workflow
+    attributes:
+      label: Clinical Workflow
+      options:
+        - soap
+        - hp
+        - emergency
+        - samplers
+        - intake
+        - followup
+        - discharge
+        - procedure
+        - radiology
+        - lab_review
+        - cardiology
+        - neurology
+        - pediatrics
+        - icu
+        - respiratory
+        - consult
+        - progress
+        - recommendations
+        - general
+    validations:
+      required: true
+
+  - type: dropdown
+    id: difficulty
+    attributes:
+      label: Difficulty
+      options:
+        - simple
+        - moderate
+        - complex
+    validations:
+      required: true
+
+  - type: input
+    id: specialty
+    attributes:
+      label: Clinical Specialty
+      description: e.g., internal-medicine, cardiology, emergency-medicine
+      placeholder: internal-medicine
+    validations:
+      required: true
+
+  - type: textarea
+    id: transcript
+    attributes:
+      label: Transcript
+      description: Full clinical scenario transcript. Paste directly or drag a .txt file.
+      placeholder: |
+        This is a follow-up visit for...
+
+        Subjective: Patient reports...
+
+        Objective: Vitals today...
+
+        Assessment and Plan:
+        1. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_entities
+    attributes:
+      label: Expected Entities (optional)
+      description: |
+        If you can identify the clinical entities, list them. Not required -- a reviewer can annotate later.
+        Format: Type: entity (code if known)
+      placeholder: |
+        Conditions: Essential hypertension (I10), Type 2 diabetes (E11.9)
+        Medications: Metformin 1000mg BID, Lisinopril 20mg daily
+        Allergies: Penicillin - rash
+        Vitals: BP 138/82, HR 76
+    validations:
+      required: false
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Any additional context about the scenario (edge cases, clinical rationale, etc.)
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Confirmations
+      options:
+        - label: This transcript contains only fictional/synthetic content (no real patient data)
+          required: true
+        - label: I have the right to contribute this content
+          required: true
+        - label: I agree to the CC BY-SA 4.0 license
+          required: true
