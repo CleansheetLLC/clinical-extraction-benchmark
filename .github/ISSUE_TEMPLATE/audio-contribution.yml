@@ -99,7 +99,7 @@ body:
       description: Verbatim transcript of the recording. If you have a separate transcript file, attach it here instead.
       placeholder: Paste transcript or drag file here
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: expected_entities
