@@ -78,10 +78,10 @@ The `tools/` directory contains scripts for comparing pipeline output against gr
 
 ```bash
 # Compare a single extraction against ground truth
-python tools/score.py --predicted output.json --expected annotations/en/soap-001.json
+python tools/score.py annotations/en/en-soap-001.json output.json
 
-# Batch score across a dataset
-python tools/batch_score.py --predicted-dir results/ --expected-dir annotations/en/
+# Batch score all matching files in a directory
+python tools/batch_score.py results/ --lang en
 ```
 
 ### Metrics
@@ -111,14 +111,27 @@ Transcripts are organized by clinical workflow:
 
 ## Contributing
 
-Contributions welcome. See `docs/contributing.md` for guidelines.
+We need help building this benchmark. The easiest way to contribute is through **GitHub Issues** -- no git expertise required.
 
-### Ways to contribute
+### Contribute via GitHub Issues
 
-1. **Record audio**: Scripted clinical scenarios in any language (see `docs/recording-guidelines.md`)
-2. **Annotate transcripts**: Add verified FHIR R4 Bundles for existing transcripts
-3. **Add languages**: Extend coverage beyond EN/DE/FR
-4. **Improve tooling**: Scoring scripts, validation, visualization
+Use our issue templates to submit contributions directly from your browser:
+
+| What you have | Issue template | Notes |
+| ------------- | -------------- | ----- |
+| A recorded clinical scenario | [Audio Contribution](../../issues/new?template=audio-contribution.yml) | Upload audio + transcript, or link to an existing transcript by ID |
+| A scripted clinical transcript | [Transcript Contribution](../../issues/new?template=transcript-contribution.yml) | Paste or upload a .txt file |
+| A FHIR R4 annotation for an existing transcript | [Annotation Contribution](../../issues/new?template=annotation-contribution.yml) | The most valuable contribution -- reference a transcript ID and submit the FHIR Bundle |
+
+Audio submissions can be paired with an existing transcript (e.g., record yourself reading `en-soap-001`) or submitted with a new transcript.
+
+### Other ways to contribute
+
+- **Add languages**: Extend coverage beyond EN/DE/FR
+- **Improve tooling**: Scoring scripts, validation, visualization
+- **Review annotations**: Flag errors in existing FHIR Bundles by opening an issue
+
+For larger contributions (tooling, batch annotations), see `docs/contributing.md` for the PR workflow.
 
 ### Quality requirements
 
