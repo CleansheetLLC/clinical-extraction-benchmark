@@ -1,0 +1,17 @@
+{
+  "id": "en-radiology-001",
+  "language": "en",
+  "workflow": "radiology",
+  "source": "original",
+  "verified": false,
+  "audio_file": null,
+  "annotation_file": null,
+  "specialty": ["radiology"],
+  "entity_counts": {
+    "Condition": 1,
+    "Observation": 1
+  },
+  "annotators": [],
+  "difficulty": "simple",
+  "notes": "Chest x-ray read with structured findings and impression. Tests radiology-specific extraction (imaging findings vs diagnoses). Source: v2f test fixtures."
+}

@@ -1,0 +1,31 @@
+This is a 78-year-old male presenting for hospital admission with acute exacerbation of congestive heart failure.
+
+Chief complaint is worsening shortness of breath and leg swelling for five days.
+
+History of present illness. Patient reports progressive dyspnea on exertion, now occurring with minimal activity. He has gained eight pounds over the past week despite adherence to fluid restriction. He sleeps on three pillows due to orthopnea and reports paroxysmal nocturnal dyspnea twice this week. He denies chest pain, palpitations, or syncope. He ran out of his furosemide five days ago and was unable to refill it.
+
+Past medical history significant for congestive heart failure with reduced ejection fraction of 35%, diagnosed four years ago. Coronary artery disease, status post three-vessel CABG in 2019. Atrial fibrillation on anticoagulation. Type 2 diabetes mellitus with peripheral neuropathy. Chronic kidney disease stage 3B with baseline creatinine of 1.8. Hypertension. Hyperlipidemia. COPD, GOLD stage 2. Osteoarthritis of bilateral knees and lumbar spine. Major depressive disorder. Benign prostatic hyperplasia. Gout.
+
+Past surgical history includes coronary artery bypass grafting in 2019. Appendectomy 1972. Right total knee replacement 2018. Cataract surgery bilateral 2021.
+
+Current medications. Carvedilol 25 mg twice daily. Lisinopril 20 mg daily. Furosemide 40 mg twice daily, which he ran out of. Spironolactone 25 mg daily. Metformin 1000 mg twice daily. Glipizide 10 mg twice daily. Atorvastatin 80 mg at bedtime. Warfarin 5 mg daily. Allopurinol 300 mg daily. Tiotropium 18 mcg inhaled daily. Albuterol inhaler as needed. Gabapentin 300 mg three times daily. Sertraline 100 mg daily. Tamsulosin 0.4 mg at bedtime. Acetaminophen 650 mg as needed for pain.
+
+Allergies. Penicillin causes anaphylaxis. Sulfa drugs cause severe rash. Codeine causes nausea and vomiting. Contrast dye causes hives, requires premedication.
+
+Family history. Father died of myocardial infarction at age 62. Mother had type 2 diabetes and died of stroke at age 75. Brother has coronary artery disease and diabetes. Sister has breast cancer, diagnosed at age 58. Paternal grandfather had heart failure.
+
+Social history. Former smoker, quit 15 years ago with a 40-pack-year history. Occasional alcohol, one to two beers weekly. Denies recreational drug use. Retired electrician. Lives with wife of 52 years in single-story home. Has two adult children who live nearby. Uses a cane for ambulation. Independent with activities of daily living but wife helps with medication management.
+
+Review of systems. Positive for fatigue, lower extremity edema, dyspnea, orthopnea, and nocturia. Negative for fever, chest pain, palpitations, cough, abdominal pain, and diarrhea.
+
+Vital signs. Blood pressure 158 over 92. Heart rate 88 and irregularly irregular. Respiratory rate 22. Oxygen saturation 91% on room air. Temperature 98.2 Fahrenheit. Weight 198 pounds, up from 190 pounds at last visit. Height 5 feet 9 inches. BMI 29.2.
+
+Physical exam. General, alert, oriented, in mild respiratory distress. HEENT, JVP elevated to 12 centimeters. Cardiovascular, irregularly irregular rhythm, S3 gallop present, 2 over 6 systolic murmur at apex. Lungs, bibasilar crackles one-third up. Abdomen, soft, hepatomegaly with liver edge 3 centimeters below costal margin. Extremities, 2 plus pitting edema bilateral lower extremities to mid-shin. Neuro, decreased sensation bilateral feet consistent with neuropathy.
+
+Labs. BNP 1850, significantly elevated. Troponin 0.04, mildly elevated. Sodium 132, low. Potassium 4.8. Creatinine 2.1, up from baseline 1.8. BUN 38. Glucose 186. Hemoglobin A1c 7.8%. INR 2.4, therapeutic. Hemoglobin 11.2, slightly low.
+
+Imaging. Chest x-ray shows cardiomegaly, bilateral pleural effusions, and pulmonary vascular congestion consistent with heart failure. Echocardiogram from three months ago showed ejection fraction 35%, moderate mitral regurgitation, and grade 2 diastolic dysfunction.
+
+Assessment. Number one, acute on chronic systolic heart failure exacerbation, likely due to medication non-adherence. Number two, acute kidney injury on chronic kidney disease, likely cardiorenal syndrome. Number three, atrial fibrillation with controlled ventricular rate, on anticoagulation. Number four, type 2 diabetes mellitus, suboptimally controlled. Number five, hypertension, uncontrolled. Number six, COPD, stable.
+
+Plan. Admit to telemetry. IV furosemide 80 mg now, then 40 mg IV twice daily. Daily weights and strict intake and output. Fluid restriction 1.5 liters daily. Low sodium diet. Continue home carvedilol, lisinopril, and spironolactone. Hold metformin due to acute kidney injury. Continue warfarin, check INR daily. Cardiology consult for optimization of heart failure regimen. Consider addition of sacubitril-valsartan if kidney function improves. Diabetes consult for glycemic management. Repeat BMP and BNP tomorrow. Social work consult for medication assistance programs. DVT prophylaxis with compression devices given anticoagulation. Code status is full code, confirmed with patient.

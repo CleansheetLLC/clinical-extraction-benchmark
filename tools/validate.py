@@ -215,7 +215,7 @@ def validate_metadata(path: Path) -> list[str]:
         errors.append(f"difficulty '{meta['difficulty']}' not in {valid_difficulties}")
 
     # Check entity_counts match annotation if annotation_file is specified
-    if "annotation_file" in meta and "entity_counts" in meta:
+    if meta.get("annotation_file") and "entity_counts" in meta:
         annotation_path = REPO_ROOT / meta["annotation_file"]
         if annotation_path.exists():
             try:

@@ -1,0 +1,21 @@
+{
+  "id": "en-intake-001",
+  "language": "en",
+  "workflow": "intake",
+  "source": "original",
+  "verified": false,
+  "audio_file": null,
+  "annotation_file": null,
+  "specialty": ["internal-medicine"],
+  "entity_counts": {
+    "Condition": 4,
+    "MedicationStatement": 5,
+    "Observation": 5,
+    "AllergyIntolerance": 2,
+    "FamilyMemberHistory": 3,
+    "ServiceRequest": 5
+  },
+  "annotators": [],
+  "difficulty": "moderate",
+  "notes": "New patient intake with full history. Rich in allergies (drug + food), family history, social history, and lab orders. Source: v2f test fixtures."
+}

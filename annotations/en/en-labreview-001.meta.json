@@ -1,0 +1,18 @@
+{
+  "id": "en-labreview-001",
+  "language": "en",
+  "workflow": "lab_review",
+  "source": "original",
+  "verified": false,
+  "audio_file": null,
+  "annotation_file": null,
+  "specialty": ["internal-medicine", "nephrology"],
+  "entity_counts": {
+    "Condition": 3,
+    "MedicationRequest": 1,
+    "Observation": 11
+  },
+  "annotators": [],
+  "difficulty": "moderate",
+  "notes": "Lab review with full CMP, A1c, and lipid panel. High observation count tests numeric extraction accuracy. Source: v2f test fixtures."
+}
