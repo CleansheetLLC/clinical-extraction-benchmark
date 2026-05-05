@@ -1,3 +1,8 @@
 __pycache__/
 *.pyc
 .DS_Store
+
+# Large reference data files (download instructions in tools/reference-data/README.md)
+tools/reference-data/*.txt
+tools/reference-data/*.csv
+tools/reference-data/*.RRF
