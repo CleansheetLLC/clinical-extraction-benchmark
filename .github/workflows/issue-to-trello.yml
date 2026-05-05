@@ -1,0 +1,84 @@
+name: Issue → Trello Card
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  issues: write
+
+env:
+  TRELLO_BOARD_ID: hxnS7mjt
+
+jobs:
+  create-trello-card:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create Trello card from issue
+        env:
+          TRELLO_API_KEY: ${{ secrets.TRELLO_API_KEY }}
+          TRELLO_TOKEN: ${{ secrets.TRELLO_TOKEN }}
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_URL: ${{ github.event.issue.html_url }}
+          ISSUE_AUTHOR: ${{ github.event.issue.user.login }}
+          ISSUE_LABELS: ${{ join(github.event.issue.labels.*.name, ',') }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+
+          # --- Determine target list name from issue labels ---
+          TARGET_LIST=""
+          if echo "$ISSUE_LABELS" | grep -qi "audio"; then
+            TARGET_LIST="Audio Contributions"
+          elif echo "$ISSUE_LABELS" | grep -qi "transcript"; then
+            TARGET_LIST="Transcript Contributions"
+          elif echo "$ISSUE_LABELS" | grep -qi "annotation"; then
+            TARGET_LIST="Annotation Contributions"
+          else
+            TARGET_LIST="Inbox"
+          fi
+          echo "Target list: $TARGET_LIST"
+
+          # --- Fetch lists from the board ---
+          LISTS_JSON=$(curl -sf "https://api.trello.com/1/boards/${TRELLO_BOARD_ID}/lists?key=${TRELLO_API_KEY}&token=${TRELLO_TOKEN}")
+
+          # Find matching list ID (case-insensitive)
+          LIST_ID=$(echo "$LISTS_JSON" | jq -r --arg name "$TARGET_LIST" \
+            '.[] | select(.name | ascii_downcase == ($name | ascii_downcase)) | .id' | head -1)
+
+          # Fall back to first list if no match
+          if [ -z "$LIST_ID" ]; then
+            LIST_ID=$(echo "$LISTS_JSON" | jq -r '.[0].id')
+            echo "Warning: list '$TARGET_LIST' not found, falling back to first list on board"
+          fi
+          echo "List ID: $LIST_ID"
+
+          # --- Build card description ---
+          # Truncate body to 16384 chars (Trello desc limit is ~16384)
+          TRUNCATED_BODY=$(echo "$ISSUE_BODY" | head -c 16000)
+          if [ ${#ISSUE_BODY} -gt 16000 ]; then
+            TRUNCATED_BODY="${TRUNCATED_BODY}…\n\n*(truncated — see full issue on GitHub)*"
+          fi
+
+          DESC=$(printf '%s\n\n---\n📎 **GitHub Issue:** %s\n👤 **Author:** @%s\n🏷️ **Labels:** %s' \
+            "$TRUNCATED_BODY" "$ISSUE_URL" "$ISSUE_AUTHOR" "$ISSUE_LABELS")
+
+          # --- Create the Trello card ---
+          CARD_JSON=$(curl -sf -X POST "https://api.trello.com/1/cards" \
+            --data-urlencode "key=${TRELLO_API_KEY}" \
+            --data-urlencode "token=${TRELLO_TOKEN}" \
+            --data-urlencode "idList=${LIST_ID}" \
+            --data-urlencode "name=${ISSUE_TITLE}" \
+            --data-urlencode "desc=${DESC}" \
+            --data-urlencode "pos=top")
+
+          CARD_URL=$(echo "$CARD_JSON" | jq -r '.shortUrl')
+          CARD_ID=$(echo "$CARD_JSON" | jq -r '.id')
+          echo "Created card: $CARD_URL"
+
+          # --- Comment on the GitHub issue with the Trello link ---
+          gh issue comment "$ISSUE_NUMBER" \
+            --repo "$GITHUB_REPOSITORY" \
+            --body "🗂️ Trello card created: ${CARD_URL}"
