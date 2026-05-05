@@ -1,0 +1,31 @@
+Dies ist ein 78-jähriger männlicher Patient, der zur stationären Aufnahme mit akuter Dekompensation einer chronischen Herzinsuffizienz vorstellig wird.
+
+Aufnahmegrund ist zunehmende Atemnot und Beinschwellungen seit fünf Tagen.
+
+Aktuelle Anamnese: Der Patient berichtet über progrediente Belastungsdyspnoe, die jetzt bereits bei minimaler Belastung auftritt. Er hat in der vergangenen Woche vier Kilogramm zugenommen, trotz Einhaltung der Trinkmengenbeschränkung. Er schläft auf drei Kissen wegen Orthopnoe und berichtet über zweimalige paroxysmale nächtliche Dyspnoe in dieser Woche. Brustschmerzen, Herzrasen oder Synkopen werden verneint. Sein Furosemid war vor fünf Tagen aufgebraucht und er konnte kein neues Rezept bekommen.
+
+Vorerkrankungen: Herzinsuffizienz mit reduzierter Ejektionsfraktion von 35 Prozent, diagnostiziert vor vier Jahren. Koronare Herzkrankheit, Zustand nach dreifacher aortokoronarer Bypassoperation 2019. Vorhofflimmern unter Antikoagulation. Diabetes mellitus Typ 2 mit peripherer Neuropathie. Chronische Niereninsuffizienz Stadium 3B mit Ausgangskreatinin von 1,8 mg/dl. Arterielle Hypertonie. Hyperlipidämie. COPD, GOLD Stadium 2. Gonarthrose beidseits und lumbale Spondylarthrose. Rezidivierende depressive Störung. Benigne Prostatahyperplasie. Gicht.
+
+Chirurgische Vorgeschichte: Aortokoronare Bypassoperation 2019. Appendektomie 1972. Kniegelenkstotalendoprothese rechts 2018. Kataraktoperation beidseits 2021.
+
+Aktuelle Medikation: Carvedilol 25 mg zweimal täglich. Ramipril 10 mg täglich. Furosemid 40 mg zweimal täglich, welches aufgebraucht war. Spironolacton 25 mg täglich. Metformin 1000 mg zweimal täglich. Glimepirid 3 mg einmal täglich. Atorvastatin 80 mg zur Nacht. Phenprocoumon nach INR. Allopurinol 300 mg täglich. Tiotropium 18 Mikrogramm inhalativ täglich. Salbutamol-Inhalator bei Bedarf. Gabapentin 300 mg dreimal täglich. Sertralin 100 mg täglich. Tamsulosin 0,4 mg zur Nacht. Paracetamol 1000 mg bei Bedarf bei Schmerzen.
+
+Allergien: Penicillin verursacht Anaphylaxie. Sulfonamide verursachen schweren Hautausschlag. Codein verursacht Übelkeit und Erbrechen. Kontrastmittel verursacht Urtikaria, Prämedikation erforderlich.
+
+Familienanamnese: Vater verstarb an Myokardinfarkt mit 62 Jahren. Mutter hatte Diabetes mellitus Typ 2 und verstarb an Schlaganfall mit 75 Jahren. Bruder hat koronare Herzkrankheit und Diabetes. Schwester hat Brustkrebs, diagnostiziert mit 58 Jahren. Großvater väterlicherseits hatte Herzinsuffizienz.
+
+Sozialanamnese: Ehemaliger Raucher, vor 15 Jahren aufgehört, kumulative Exposition 40 Packungsjahre. Gelegentlicher Alkoholkonsum, ein bis zwei Bier pro Woche. Kein Drogenkonsum. Pensionierter Elektriker. Lebt mit seiner Ehefrau seit 52 Jahren in einer ebenerdigen Wohnung. Hat zwei erwachsene Kinder, die in der Nähe wohnen. Nutzt einen Gehstock. Selbstständig bei Aktivitäten des täglichen Lebens, aber die Ehefrau hilft bei der Medikamentenverwaltung.
+
+Systemanamnese: Positiv für Müdigkeit, Unterschenkelödeme, Dyspnoe, Orthopnoe und Nykturie. Negativ für Fieber, Brustschmerzen, Herzrasen, Husten, Bauchschmerzen und Durchfall.
+
+Vitalzeichen: Blutdruck 158 zu 92. Herzfrequenz 88, absolut arrhythmisch. Atemfrequenz 22. Sauerstoffsättigung 91 Prozent bei Raumluft. Temperatur 36,8 Grad Celsius. Gewicht 90 Kilogramm, zugenommen von 86 Kilogramm beim letzten Besuch. Größe 175 Zentimeter. BMI 29,4.
+
+Körperliche Untersuchung: Allgemein wach, orientiert, leichte Ruhedyspnoe. Kopf und Hals: Jugularvenenstauung auf 12 Zentimeter erhöht. Kardiovaskulär: absolut arrhythmisch, dritter Herzton auskultierbar, 2 von 6 Systolikum über der Herzspitze. Lunge: beidseits basal feuchte Rasselgeräusche im unteren Drittel. Abdomen: weich, Hepatomegalie mit Leberrand 3 Zentimeter unter dem Rippenbogen tastbar. Extremitäten: zweigradig eindrückbare Ödeme beidseits bis zur Mitte der Unterschenkel. Neurologisch: verminderte Sensibilität an beiden Füßen, vereinbar mit Neuropathie.
+
+Laborwerte: BNP 1850, deutlich erhöht. Troponin 0,04, leicht erhöht. Natrium 132, erniedrigt. Kalium 4,8. Kreatinin 2,1, angestiegen gegenüber Ausgangswert 1,8. Harnstoff 38. Glukose 186. HbA1c 7,8 Prozent. INR 2,4, therapeutisch. Hämoglobin 11,2, leicht erniedrigt.
+
+Bildgebung: Röntgen-Thorax zeigt Kardiomegalie, bilaterale Pleuraergüsse und pulmonalvenöse Stauung, vereinbar mit Herzinsuffizienz. Echokardiographie von vor drei Monaten zeigte Ejektionsfraktion 35 Prozent, mittelgradige Mitralklappeninsuffizienz und diastolische Dysfunktion Grad 2.
+
+Beurteilung: Erstens, akute Dekompensation der chronischen systolischen Herzinsuffizienz, wahrscheinlich aufgrund mangelnder Medikamentenadhärenz. Zweitens, akute Nierenschädigung bei vorbestehender chronischer Niereninsuffizienz, wahrscheinlich kardiorenales Syndrom. Drittens, Vorhofflimmern mit kontrollierter Kammerfrequenz, unter Antikoagulation. Viertens, Diabetes mellitus Typ 2, suboptimal eingestellt. Fünftens, arterielle Hypertonie, nicht ausreichend kontrolliert. Sechstens, COPD, stabil.
+
+Procedere: Stationäre Aufnahme auf die Monitorstation. Furosemid 80 mg intravenös jetzt, dann 40 mg intravenös zweimal täglich. Tägliches Wiegen und strikte Ein- und Ausfuhrkontrolle. Trinkmengenbeschränkung auf 1,5 Liter täglich. Natriumarme Kost. Carvedilol, Ramipril und Spironolacton von zu Hause weiterführen. Metformin wegen akuter Nierenschädigung pausieren. Phenprocoumon weiterführen, tägliche INR-Kontrolle. Kardiologisches Konsil zur Optimierung der Herzinsuffizienztherapie. Bei Besserung der Nierenfunktion Umstellung auf Sacubitril-Valsartan erwägen. Diabetologisches Konsil zur Stoffwechseleinstellung. Kontroll-Labor mit Elektrolyten und BNP morgen. Sozialdienst bezüglich Unterstützung bei Medikamentenbeschaffung. Thromboseprophylaxe mit Kompressionsstrümpfen bei bestehender Antikoagulation. Reanimationsstatus: Volles Therapieziel, mit dem Patienten besprochen.
