@@ -17,10 +17,14 @@ The model is ~420MB and loads on first request or at startup with --preload.
 
 import argparse
 import io
+import subprocess
+import tempfile
 import time
 from contextlib import asynccontextmanager
+from pathlib import Path
 
 import librosa
+import numpy as np
 import torch
 import uvicorn
 from fastapi import FastAPI, File, HTTPException, UploadFile
@@ -94,8 +98,26 @@ async def transcribe(file: UploadFile = File(...)):
 
     try:
         audio_bytes = await file.read()
-        # librosa handles format conversion (M4A, MP3, etc.) via soundfile/ffmpeg
-        speech, sr = librosa.load(io.BytesIO(audio_bytes), sr=SAMPLE_RATE, mono=True)
+        # Try librosa/soundfile first (works for WAV, FLAC)
+        try:
+            speech, sr = librosa.load(io.BytesIO(audio_bytes), sr=SAMPLE_RATE, mono=True)
+        except Exception:
+            # Fallback: use ffmpeg to convert M4A/MP3/etc. to WAV
+            suffix = Path(file.filename or "audio").suffix or ".m4a"
+            with tempfile.NamedTemporaryFile(suffix=suffix, delete=False) as tmp_in:
+                tmp_in.write(audio_bytes)
+                tmp_in_path = tmp_in.name
+            tmp_out_path = tmp_in_path + ".wav"
+            try:
+                subprocess.run(
+                    ["ffmpeg", "-y", "-i", tmp_in_path, "-ar", str(SAMPLE_RATE),
+                     "-ac", "1", "-f", "wav", tmp_out_path],
+                    capture_output=True, check=True, timeout=30,
+                )
+                speech, sr = librosa.load(tmp_out_path, sr=SAMPLE_RATE, mono=True)
+            finally:
+                Path(tmp_in_path).unlink(missing_ok=True)
+                Path(tmp_out_path).unlink(missing_ok=True)
     except Exception as e:
         raise HTTPException(400, f"Could not decode audio: {e}")
 
