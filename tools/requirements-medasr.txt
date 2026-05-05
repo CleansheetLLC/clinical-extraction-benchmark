@@ -1,0 +1,6 @@
+fastapi>=0.110
+uvicorn>=0.27
+torch>=2.0
+librosa>=0.10
+soundfile>=0.12
+git+https://github.com/huggingface/transformers.git@65dc261512cbdb1ee72b88ae5b222f2605aad8e5
