@@ -1,0 +1,23 @@
+{
+  "id": "en-handoff-002",
+  "language": "en",
+  "workflow": "handoff",
+  "source": "original",
+  "verified": false,
+  "audio_file": null,
+  "annotation_file": null,
+  "specialty": ["orthopedics", "cardiology", "endocrinology", "geriatrics"],
+  "entity_counts": {
+    "Condition": 10,
+    "MedicationStatement": 14,
+    "MedicationRequest": 5,
+    "Observation": 18,
+    "AllergyIntolerance": 1,
+    "Procedure": 2,
+    "ServiceRequest": 6,
+    "FamilyMemberHistory": 0
+  },
+  "annotators": [],
+  "difficulty": "complex",
+  "notes": "Night-to-day nursing handoff on med-surg floor covering 4 patients: post-op knee replacement with pain control issues, acute-on-chronic CHF exacerbation on furosemide drip, DKA resolving with insulin drip transition, and elderly dementia patient after fall. Tests dense multi-patient entity extraction with polypharmacy."
+}

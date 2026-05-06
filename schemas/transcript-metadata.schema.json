@@ -13,7 +13,7 @@
     },
     "language": {
       "type": "string",
-      "enum": ["en", "de", "fr", "vi", "zh", "pl"],
+      "enum": ["en", "de", "fr", "es", "vi", "zh", "pl"],
       "description": "ISO 639-1 language code"
     },
     "workflow": {
@@ -23,7 +23,7 @@
         "intake", "followup", "discharge", "procedure",
         "radiology", "lab_review", "cardiology", "neurology",
         "pediatrics", "icu", "respiratory", "consult",
-        "progress", "recommendations"
+        "progress", "recommendations", "handoff"
       ]
     },
     "source": {
