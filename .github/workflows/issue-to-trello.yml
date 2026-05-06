@@ -42,7 +42,16 @@ jobs:
           echo "Target list: $TARGET_LIST"
 
           # --- Fetch lists from the board ---
-          LISTS_JSON=$(curl -sf "https://api.trello.com/1/boards/${TRELLO_BOARD_ID}/lists?key=${TRELLO_API_KEY}&token=${TRELLO_TOKEN}")
+          HTTP_CODE=$(curl -s -o /tmp/lists.json -w "%{http_code}" \
+            "https://api.trello.com/1/boards/${TRELLO_BOARD_ID}/lists?key=${TRELLO_API_KEY}&token=${TRELLO_TOKEN}")
+
+          if [ "$HTTP_CODE" -ne 200 ]; then
+            echo "::error::Trello API returned HTTP $HTTP_CODE when fetching board lists"
+            cat /tmp/lists.json
+            exit 1
+          fi
+
+          LISTS_JSON=$(cat /tmp/lists.json)
 
           # Find matching list ID (case-insensitive)
           LIST_ID=$(echo "$LISTS_JSON" | jq -r --arg name "$TARGET_LIST" \
@@ -62,11 +71,11 @@ jobs:
             TRUNCATED_BODY="${TRUNCATED_BODY}…\n\n*(truncated — see full issue on GitHub)*"
           fi
 
-          DESC=$(printf '%s\n\n---\n📎 **GitHub Issue:** %s\n👤 **Author:** @%s\n🏷️ **Labels:** %s' \
+          DESC=$(printf '%s\n\n---\n**GitHub Issue:** %s\n**Author:** @%s\n**Labels:** %s' \
             "$TRUNCATED_BODY" "$ISSUE_URL" "$ISSUE_AUTHOR" "$ISSUE_LABELS")
 
           # --- Create the Trello card ---
-          CARD_JSON=$(curl -sf -X POST "https://api.trello.com/1/cards" \
+          HTTP_CODE=$(curl -s -o /tmp/card.json -w "%{http_code}" -X POST "https://api.trello.com/1/cards" \
             --data-urlencode "key=${TRELLO_API_KEY}" \
             --data-urlencode "token=${TRELLO_TOKEN}" \
             --data-urlencode "idList=${LIST_ID}" \
@@ -74,11 +83,17 @@ jobs:
             --data-urlencode "desc=${DESC}" \
             --data-urlencode "pos=top")
 
+          if [ "$HTTP_CODE" -ne 200 ]; then
+            echo "::error::Trello API returned HTTP $HTTP_CODE when creating card"
+            cat /tmp/card.json
+            exit 1
+          fi
+
+          CARD_JSON=$(cat /tmp/card.json)
           CARD_URL=$(echo "$CARD_JSON" | jq -r '.shortUrl')
-          CARD_ID=$(echo "$CARD_JSON" | jq -r '.id')
           echo "Created card: $CARD_URL"
 
           # --- Comment on the GitHub issue with the Trello link ---
           gh issue comment "$ISSUE_NUMBER" \
             --repo "$GITHUB_REPOSITORY" \
-            --body "🗂️ Trello card created: ${CARD_URL}"
+            --body "Trello card created: ${CARD_URL}"
