@@ -1,0 +1,20 @@
+{
+  "id": "fr-dialogue-001",
+  "language": "fr",
+  "workflow": "dialogue",
+  "source": "original",
+  "verified": false,
+  "audio_file": null,
+  "annotation_file": null,
+  "specialty": ["internal-medicine", "social-work"],
+  "entity_counts": {
+    "Condition": 2,
+    "MedicationStatement": 1,
+    "Observation": 5,
+    "ServiceRequest": 3,
+    "FamilyMemberHistory": 0
+  },
+  "annotators": [],
+  "difficulty": "complex",
+  "notes": "French translation of en-dialogue-001. SDOH screening dialogue — housing instability, food insecurity, medication non-adherence due to cost. Adapted for French healthcare system (CAF, CMU complémentaire, Restos du Cœur)."
+}

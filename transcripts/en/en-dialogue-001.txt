@@ -1,0 +1,11 @@
+Provider: Hi Mrs. Garcia, good to see you back. How have things been since your last visit?
+Patient: Honestly doc, it's been rough. We got evicted last month — I'm staying with my sister now, but it's pretty crowded. Me, my two kids, her three, all in a two-bedroom.
+Provider: I'm so sorry. How are the kids handling it?
+Patient: They've been missing school days. The bus route doesn't go from her place.
+Provider: And work?
+Patient: They cut my hours at the warehouse. I'm picking up DoorDash evenings but it's barely covering anything. I had to skip my lisinopril refill last week — the copay was forty bucks and I just didn't have it.
+Provider: OK, that's important. What about food?
+Patient: The food bank's been helping. It's mostly canned stuff though, not great for my diabetes. Fresh vegetables are out of reach right now.
+Provider: Have you applied for SNAP?
+Patient: I tried but they sent the form back, said I missed something. I haven't had time to redo it.
+Provider: Let's get our community health worker on this today — housing, SNAP, food. And I'll put your lisinopril on a 90-day supply through our patient assistance program so we don't lose ground on the blood pressure.

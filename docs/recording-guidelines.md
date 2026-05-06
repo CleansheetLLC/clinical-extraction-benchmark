@@ -73,6 +73,51 @@ Allergies: Penicillin - rash (RxNorm 7980)
 Vitals: BP 138/82, HR 76, Temp 98.6F, SpO2 98%, Weight 92kg
 ```
 
+## Multi-Speaker Recordings
+
+Dialogue transcripts (`workflow: dialogue`) feature explicit provider-patient conversations with speaker labels. These require a different recording approach than single-speaker monologues.
+
+### Setup
+
+| Parameter | Requirement | Notes |
+| --------- | ----------- | ----- |
+| Speakers | 2 (one provider, one patient) | Each person reads their labeled lines |
+| Microphone | Single shared mic | Place between both speakers at equal distance |
+| Pacing | Natural conversational | Pause briefly between turns; don't rush or overlap |
+| Channels | Mono | Do not use separate channels per speaker |
+
+### Recording process
+
+1. **Assign roles.** One person reads all `Provider:` / `Médica:` lines, the other reads all `Patient:` / `Paciente:` lines.
+2. **Single microphone.** Place a desk or table mic between both speakers. This simulates a real exam-room capture.
+3. **Natural pacing.** Leave a brief pause (~1 second) between speaker turns. Do not read speaker labels aloud — only the dialogue text.
+4. **Complete the encounter.** Record the full transcript in one take when possible. If you need to restart, re-record the entire encounter.
+
+### Dialogue script template
+
+```
+[SCENARIO METADATA]
+ID: {lang}-dialogue-{sequence}
+Workflow: dialogue
+Specialty: Internal Medicine, Social Work
+Difficulty: Complex
+Speakers: 2 (provider, patient)
+Expected entities: 2 conditions, 1 medication, 5 observations, 3 service requests
+
+[SCRIPT]
+Provider: [opening question]
+Patient: [response with clinical/social details]
+Provider: [follow-up question]
+Patient: [response]
+...
+Provider: [assessment and plan]
+
+[EXPECTED ENTITIES]
+Conditions: ...
+Observations: ...
+ServiceRequests: ...
+```
+
 ## Multi-Language Considerations
 
 | Language | Code system | Notes |

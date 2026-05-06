@@ -23,7 +23,7 @@
         "intake", "followup", "discharge", "procedure",
         "radiology", "lab_review", "cardiology", "neurology",
         "pediatrics", "icu", "respiratory", "consult",
-        "progress", "recommendations", "handoff"
+        "progress", "recommendations", "handoff", "dialogue"
       ]
     },
     "source": {

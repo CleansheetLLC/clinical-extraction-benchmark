@@ -1,0 +1,20 @@
+{
+  "id": "es-dialogue-002",
+  "language": "es",
+  "workflow": "dialogue",
+  "source": "original",
+  "verified": false,
+  "audio_file": null,
+  "annotation_file": null,
+  "specialty": ["geriatrics", "psychiatry"],
+  "entity_counts": {
+    "Condition": 1,
+    "MedicationStatement": 0,
+    "Observation": 4,
+    "ServiceRequest": 2,
+    "FamilyMemberHistory": 0
+  },
+  "annotators": [],
+  "difficulty": "complex",
+  "notes": "Caregiver burden assessment in Spanish — elderly spouse caring for dementia patient, sleep disruption, wandering episodes, caregiver depression. Medicaid day program referral. Independent scenario, not a translation of en-dialogue-002."
+}

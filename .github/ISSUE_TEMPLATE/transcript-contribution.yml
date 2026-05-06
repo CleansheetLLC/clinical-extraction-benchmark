@@ -41,6 +41,7 @@ body:
         - progress
         - recommendations
         - general
+        - dialogue
     validations:
       required: true
 

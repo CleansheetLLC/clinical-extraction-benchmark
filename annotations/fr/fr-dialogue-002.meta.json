@@ -1,0 +1,20 @@
+{
+  "id": "fr-dialogue-002",
+  "language": "fr",
+  "workflow": "dialogue",
+  "source": "original",
+  "verified": false,
+  "audio_file": null,
+  "annotation_file": null,
+  "specialty": ["geriatrics", "psychiatry"],
+  "entity_counts": {
+    "Condition": 1,
+    "MedicationStatement": 0,
+    "Observation": 4,
+    "ServiceRequest": 2,
+    "FamilyMemberHistory": 0
+  },
+  "annotators": [],
+  "difficulty": "complex",
+  "notes": "French translation of en-dialogue-002. Caregiver burden assessment — spouse caring for dementia patient, sleep deprivation, social isolation. Adapted for French healthcare system (APA, accueil de jour, réseau d'aide aux aidants)."
+}
