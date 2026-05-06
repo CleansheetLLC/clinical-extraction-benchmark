@@ -1,6 +1,6 @@
 # Clinical Extraction Benchmark
 
-An open benchmark for evaluating clinical NLP pipelines that extract structured FHIR R4 resources from clinical text and speech. Covers the full chain: **audio → transcript → structured FHIR data**.
+An open benchmark for evaluating clinical NLP pipelines that extract structured FHIR R4 resources from clinical text and speech. Covers the full chain: **audio → transcript → structured FHIR data**. In practical terms: how well can AI listen to a clinical encounter and correctly chart it?
 
 ## What This Is
 
@@ -57,7 +57,7 @@ Each transcript has a corresponding verified FHIR R4 Bundle in `annotations/`. T
 
 ### Layer 3: Audio (Where Available)
 
-Original scripted scenarios include recorded audio. External dataset audio is referenced, not redistributed.
+Audio recorded for original scenarios is committed to `audio/` under CC BY-SA 4.0. Audio from external datasets (MultiMed, n2c2) is not included — obtain it from the original sources under their respective licenses.
 
 ## Annotation Format
 
@@ -111,7 +111,7 @@ Transcripts are organized by clinical workflow:
 
 ## Contributing
 
-We need help building this benchmark. The easiest way to contribute is through **GitHub Issues** -- no git expertise required.
+We need help building this benchmark. The easiest way to contribute audio is through the **[web recorder](https://cleansheet.life/#contribute)** — pick a transcript, read it aloud, and submit. No GitHub account needed. You can also contribute through **GitHub Issues** — no git expertise required.
 
 ### Contribute via GitHub Issues
 
