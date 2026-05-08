@@ -4,9 +4,13 @@
   "workflow": "handoff",
   "source": "original",
   "verified": false,
-  "audio_file": null,
+  "audio_file": "audio/en/en-handoff-001.m4a",
   "annotation_file": null,
-  "specialty": ["emergency-medicine", "pediatrics", "pulmonology"],
+  "specialty": [
+    "emergency-medicine",
+    "pediatrics",
+    "pulmonology"
+  ],
   "entity_counts": {
     "Condition": 6,
     "MedicationStatement": 1,

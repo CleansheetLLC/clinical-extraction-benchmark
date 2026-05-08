@@ -4,9 +4,12 @@
   "workflow": "handoff",
   "source": "original",
   "verified": false,
-  "audio_file": null,
+  "audio_file": "audio/en/en-handoff-005.m4a",
   "annotation_file": null,
-  "specialty": ["emergency-medicine", "urgent-care"],
+  "specialty": [
+    "emergency-medicine",
+    "urgent-care"
+  ],
   "entity_counts": {
     "Condition": 2,
     "MedicationStatement": 0,
