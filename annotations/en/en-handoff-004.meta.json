@@ -4,9 +4,12 @@
   "workflow": "handoff",
   "source": "original",
   "verified": false,
-  "audio_file": null,
+  "audio_file": "audio/en/en-handoff-004.m4a",
   "annotation_file": null,
-  "specialty": ["internal-medicine", "family-medicine"],
+  "specialty": [
+    "internal-medicine",
+    "family-medicine"
+  ],
   "entity_counts": {
     "Condition": 4,
     "MedicationStatement": 3,

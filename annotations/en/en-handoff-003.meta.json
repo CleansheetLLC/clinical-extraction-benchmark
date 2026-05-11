@@ -4,9 +4,15 @@
   "workflow": "handoff",
   "source": "original",
   "verified": false,
-  "audio_file": null,
+  "audio_file": "audio/en/en-handoff-003.m4a",
   "annotation_file": null,
-  "specialty": ["critical-care", "infectious-disease", "pulmonology", "cardiology", "neurology"],
+  "specialty": [
+    "critical-care",
+    "infectious-disease",
+    "pulmonology",
+    "cardiology",
+    "neurology"
+  ],
   "entity_counts": {
     "Condition": 9,
     "MedicationStatement": 15,
