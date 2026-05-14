@@ -4,9 +4,11 @@
   "workflow": "hp",
   "source": "original",
   "verified": false,
-  "audio_file": null,
+  "audio_file": "audio/en/en-hp-002.m4a",
   "annotation_file": null,
-  "specialty": ["internal-medicine"],
+  "specialty": [
+    "internal-medicine"
+  ],
   "entity_counts": {
     "Condition": 3,
     "MedicationStatement": 2,

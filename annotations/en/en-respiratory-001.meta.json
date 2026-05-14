@@ -4,9 +4,12 @@
   "workflow": "respiratory",
   "source": "original",
   "verified": false,
-  "audio_file": null,
+  "audio_file": "audio/en/en-respiratory-001.m4a",
   "annotation_file": null,
-  "specialty": ["pulmonology", "critical-care"],
+  "specialty": [
+    "pulmonology",
+    "critical-care"
+  ],
   "entity_counts": {
     "Observation": 8,
     "Procedure": 1

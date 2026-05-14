@@ -4,9 +4,14 @@
   "workflow": "handoff",
   "source": "original",
   "verified": false,
-  "audio_file": null,
+  "audio_file": "audio/en/en-handoff-002.m4a",
   "annotation_file": null,
-  "specialty": ["orthopedics", "cardiology", "endocrinology", "geriatrics"],
+  "specialty": [
+    "orthopedics",
+    "cardiology",
+    "endocrinology",
+    "geriatrics"
+  ],
   "entity_counts": {
     "Condition": 10,
     "MedicationStatement": 14,

@@ -4,9 +4,16 @@
   "workflow": "handoff",
   "source": "original",
   "verified": false,
-  "audio_file": null,
+  "audio_file": "audio/en/en-handoff-006.m4a",
   "annotation_file": null,
-  "specialty": ["oncology", "cardiology", "hematology", "general-surgery", "neurology", "palliative-care"],
+  "specialty": [
+    "oncology",
+    "cardiology",
+    "hematology",
+    "general-surgery",
+    "neurology",
+    "palliative-care"
+  ],
   "entity_counts": {
     "Condition": 14,
     "MedicationStatement": 20,
