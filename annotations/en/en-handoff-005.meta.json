@@ -4,7 +4,6 @@
   "workflow": "handoff",
   "source": "original",
   "verified": false,
-  "audio_file": "audio/en/en-handoff-005.m4a",
   "annotation_file": null,
   "specialty": [
     "emergency-medicine",
@@ -22,5 +21,18 @@
   },
   "annotators": [],
   "difficulty": "simple",
-  "notes": "Urgent care provider-to-provider within-shift handoff covering 2 patients: forehead laceration awaiting sutures with tetanus given, and possible UTI awaiting urine results with empiric antibiotics planned. Tests extraction from brief, straightforward handoff with procedural and medication data."
+  "notes": "Urgent care provider-to-provider within-shift handoff covering 2 patients: forehead laceration awaiting sutures with tetanus given, and possible UTI awaiting urine results with empiric antibiotics planned. Tests extraction from brief, straightforward handoff with procedural and medication data.",
+  "audio_files": [
+    {
+      "path": "audio/en/en-handoff-005/en-handoff-005-legacy.m4a",
+      "contributor": "unknown",
+      "dialect": null,
+      "mic_label": null,
+      "noise_condition": null,
+      "duration_seconds": 124.735,
+      "submitted_at": null,
+      "source_blob": null,
+      "verified": true
+    }
+  ]
 }

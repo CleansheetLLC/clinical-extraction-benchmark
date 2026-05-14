@@ -4,9 +4,10 @@
   "workflow": "consult",
   "source": "original",
   "verified": false,
-  "audio_file": null,
   "annotation_file": null,
-  "specialty": ["cardiology"],
+  "specialty": [
+    "cardiology"
+  ],
   "entity_counts": {
     "Condition": 2,
     "MedicationStatement": 1,
@@ -16,5 +17,18 @@
   },
   "annotators": [],
   "difficulty": "moderate",
-  "notes": "Cardiology consultation for chest pain. Tests provisional vs confirmed diagnosis distinction (possible stable angina). Source: v2f test fixtures."
+  "notes": "Cardiology consultation for chest pain. Tests provisional vs confirmed diagnosis distinction (possible stable angina). Source: v2f test fixtures.",
+  "audio_files": [
+    {
+      "path": "audio/en/en-consult-001/en-consult-001-legacy.m4a",
+      "contributor": "unknown",
+      "dialect": null,
+      "mic_label": null,
+      "noise_condition": null,
+      "duration_seconds": 51.776,
+      "submitted_at": null,
+      "source_blob": null,
+      "verified": true
+    }
+  ]
 }

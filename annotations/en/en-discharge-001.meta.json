@@ -4,9 +4,11 @@
   "workflow": "discharge",
   "source": "original",
   "verified": false,
-  "audio_file": null,
   "annotation_file": null,
-  "specialty": ["internal-medicine", "pulmonology"],
+  "specialty": [
+    "internal-medicine",
+    "pulmonology"
+  ],
   "entity_counts": {
     "Condition": 1,
     "MedicationRequest": 2,
@@ -14,5 +16,18 @@
   },
   "annotators": [],
   "difficulty": "simple",
-  "notes": "Discharge summary for community-acquired pneumonia. Tests resolved condition status and discharge medication extraction. Source: v2f test fixtures."
+  "notes": "Discharge summary for community-acquired pneumonia. Tests resolved condition status and discharge medication extraction. Source: v2f test fixtures.",
+  "audio_files": [
+    {
+      "path": "audio/en/en-discharge-001/en-discharge-001-legacy.m4a",
+      "contributor": "unknown",
+      "dialect": null,
+      "mic_label": null,
+      "noise_condition": null,
+      "duration_seconds": 43.776,
+      "submitted_at": null,
+      "source_blob": null,
+      "verified": true
+    }
+  ]
 }

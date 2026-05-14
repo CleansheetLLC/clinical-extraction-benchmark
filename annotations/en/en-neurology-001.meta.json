@@ -4,9 +4,10 @@
   "workflow": "neurology",
   "source": "original",
   "verified": false,
-  "audio_file": null,
   "annotation_file": null,
-  "specialty": ["neurology"],
+  "specialty": [
+    "neurology"
+  ],
   "entity_counts": {
     "Condition": 1,
     "MedicationRequest": 1,
@@ -16,5 +17,18 @@
   },
   "annotators": [],
   "difficulty": "moderate",
-  "notes": "New onset seizure consult. Tests provisional diagnosis, negative findings (MRI normal, labs unremarkable), and family history extraction. Source: v2f test fixtures."
+  "notes": "New onset seizure consult. Tests provisional diagnosis, negative findings (MRI normal, labs unremarkable), and family history extraction. Source: v2f test fixtures.",
+  "audio_files": [
+    {
+      "path": "audio/en/en-neurology-001/en-neurology-001-legacy.m4a",
+      "contributor": "unknown",
+      "dialect": null,
+      "mic_label": null,
+      "noise_condition": null,
+      "duration_seconds": 104.96,
+      "submitted_at": null,
+      "source_blob": null,
+      "verified": true
+    }
+  ]
 }

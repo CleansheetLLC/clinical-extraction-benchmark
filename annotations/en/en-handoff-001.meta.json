@@ -4,7 +4,6 @@
   "workflow": "handoff",
   "source": "original",
   "verified": false,
-  "audio_file": "audio/en/en-handoff-001.m4a",
   "annotation_file": null,
   "specialty": [
     "emergency-medicine",
@@ -23,5 +22,18 @@
   },
   "annotators": [],
   "difficulty": "moderate",
-  "notes": "ED end-of-shift handoff covering 3 patients: chest pain workup (ACS rule-out), pediatric abdominal pain (probable appendicitis), and COPD exacerbation on BiPAP. Tests multi-patient extraction from a single informal spoken monologue."
+  "notes": "ED end-of-shift handoff covering 3 patients: chest pain workup (ACS rule-out), pediatric abdominal pain (probable appendicitis), and COPD exacerbation on BiPAP. Tests multi-patient extraction from a single informal spoken monologue.",
+  "audio_files": [
+    {
+      "path": "audio/en/en-handoff-001/en-handoff-001-legacy.m4a",
+      "contributor": "unknown",
+      "dialect": null,
+      "mic_label": null,
+      "noise_condition": null,
+      "duration_seconds": 224.065,
+      "submitted_at": null,
+      "source_blob": null,
+      "verified": true
+    }
+  ]
 }

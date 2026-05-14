@@ -4,7 +4,6 @@
   "workflow": "soap",
   "source": "original",
   "verified": false,
-  "audio_file": "audio/en/en-soap-001.m4a",
   "annotation_file": "annotations/en/en-soap-001.json",
   "specialty": [
     "internal-medicine"
@@ -19,5 +18,18 @@
     "claude-initial"
   ],
   "difficulty": "simple",
-  "notes": "Standard SOAP follow-up for chronic disease management (HTN, T2DM, hyperlipidemia). Includes vitals and recent labs. No orders, no procedures. Baseline benchmark scenario."
+  "notes": "Standard SOAP follow-up for chronic disease management (HTN, T2DM, hyperlipidemia). Includes vitals and recent labs. No orders, no procedures. Baseline benchmark scenario.",
+  "audio_files": [
+    {
+      "path": "audio/en/en-soap-001/en-soap-001-legacy.m4a",
+      "contributor": "unknown",
+      "dialect": null,
+      "mic_label": null,
+      "noise_condition": null,
+      "duration_seconds": 171.52,
+      "submitted_at": null,
+      "source_blob": null,
+      "verified": true
+    }
+  ]
 }

@@ -4,9 +4,10 @@
   "workflow": "general",
   "source": "original",
   "verified": false,
-  "audio_file": null,
   "annotation_file": null,
-  "specialty": ["family-medicine"],
+  "specialty": [
+    "family-medicine"
+  ],
   "entity_counts": {
     "Condition": 2,
     "MedicationStatement": 1,
@@ -14,5 +15,18 @@
   },
   "annotators": [],
   "difficulty": "simple",
-  "notes": "URI office visit. Tests extraction of acute viral diagnosis alongside chronic seasonal allergies. Source: v2f test fixtures."
+  "notes": "URI office visit. Tests extraction of acute viral diagnosis alongside chronic seasonal allergies. Source: v2f test fixtures.",
+  "audio_files": [
+    {
+      "path": "audio/en/en-general-001/en-general-001-legacy.m4a",
+      "contributor": "unknown",
+      "dialect": null,
+      "mic_label": null,
+      "noise_condition": null,
+      "duration_seconds": 69.376,
+      "submitted_at": null,
+      "source_blob": null,
+      "verified": true
+    }
+  ]
 }

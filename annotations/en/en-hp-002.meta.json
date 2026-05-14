@@ -4,7 +4,6 @@
   "workflow": "hp",
   "source": "original",
   "verified": false,
-  "audio_file": "audio/en/en-hp-002.m4a",
   "annotation_file": null,
   "specialty": [
     "internal-medicine"
@@ -18,5 +17,18 @@
   },
   "annotators": [],
   "difficulty": "simple",
-  "notes": "Routine annual physical. Straightforward chronic disease management with lab orders. Source: v2f test fixtures."
+  "notes": "Routine annual physical. Straightforward chronic disease management with lab orders. Source: v2f test fixtures.",
+  "audio_files": [
+    {
+      "path": "audio/en/en-hp-002/en-hp-002-legacy.m4a",
+      "contributor": "unknown",
+      "dialect": null,
+      "mic_label": null,
+      "noise_condition": null,
+      "duration_seconds": 79.319,
+      "submitted_at": null,
+      "source_blob": null,
+      "verified": true
+    }
+  ]
 }

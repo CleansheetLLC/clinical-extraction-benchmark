@@ -4,7 +4,6 @@
   "workflow": "handoff",
   "source": "original",
   "verified": false,
-  "audio_file": "audio/en/en-handoff-002.m4a",
   "annotation_file": null,
   "specialty": [
     "orthopedics",
@@ -24,5 +23,18 @@
   },
   "annotators": [],
   "difficulty": "complex",
-  "notes": "Night-to-day nursing handoff on med-surg floor covering 4 patients: post-op knee replacement with pain control issues, acute-on-chronic CHF exacerbation on furosemide drip, DKA resolving with insulin drip transition, and elderly dementia patient after fall. Tests dense multi-patient entity extraction with polypharmacy."
+  "notes": "Night-to-day nursing handoff on med-surg floor covering 4 patients: post-op knee replacement with pain control issues, acute-on-chronic CHF exacerbation on furosemide drip, DKA resolving with insulin drip transition, and elderly dementia patient after fall. Tests dense multi-patient entity extraction with polypharmacy.",
+  "audio_files": [
+    {
+      "path": "audio/en/en-handoff-002/en-handoff-002-legacy.m4a",
+      "contributor": "unknown",
+      "dialect": null,
+      "mic_label": null,
+      "noise_condition": null,
+      "duration_seconds": 360.119,
+      "submitted_at": null,
+      "source_blob": null,
+      "verified": true
+    }
+  ]
 }

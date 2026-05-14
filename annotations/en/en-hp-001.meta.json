@@ -4,7 +4,6 @@
   "workflow": "hp",
   "source": "original",
   "verified": false,
-  "audio_file": "audio/en/en-hp-001.m4a",
   "annotation_file": null,
   "specialty": [
     "internal-medicine",
@@ -22,5 +21,18 @@
   },
   "annotators": [],
   "difficulty": "complex",
-  "notes": "Stress-test scenario: 78yo CHF admission with 12+ comorbidities, polypharmacy (15 meds), 4 allergies, 5 family history entries, 10+ labs, new orders. Source: v2f test fixtures."
+  "notes": "Stress-test scenario: 78yo CHF admission with 12+ comorbidities, polypharmacy (15 meds), 4 allergies, 5 family history entries, 10+ labs, new orders. Source: v2f test fixtures.",
+  "audio_files": [
+    {
+      "path": "audio/en/en-hp-001/en-hp-001-legacy.m4a",
+      "contributor": "unknown",
+      "dialect": null,
+      "mic_label": null,
+      "noise_condition": null,
+      "duration_seconds": 436.673,
+      "submitted_at": null,
+      "source_blob": null,
+      "verified": true
+    }
+  ]
 }

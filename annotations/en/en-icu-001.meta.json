@@ -4,9 +4,11 @@
   "workflow": "icu",
   "source": "original",
   "verified": false,
-  "audio_file": null,
   "annotation_file": null,
-  "specialty": ["critical-care", "infectious-disease"],
+  "specialty": [
+    "critical-care",
+    "infectious-disease"
+  ],
   "entity_counts": {
     "Condition": 3,
     "MedicationStatement": 1,
@@ -15,5 +17,18 @@
   },
   "annotators": [],
   "difficulty": "complex",
-  "notes": "ICU progress note for septic shock. Tests trending lab values (WBC, lactate, creatinine, procalcitonin), vasopressor management, and antibiotic de-escalation. Source: v2f test fixtures."
+  "notes": "ICU progress note for septic shock. Tests trending lab values (WBC, lactate, creatinine, procalcitonin), vasopressor management, and antibiotic de-escalation. Source: v2f test fixtures.",
+  "audio_files": [
+    {
+      "path": "audio/en/en-icu-001/en-icu-001-legacy.m4a",
+      "contributor": "unknown",
+      "dialect": null,
+      "mic_label": null,
+      "noise_condition": null,
+      "duration_seconds": 113.088,
+      "submitted_at": null,
+      "source_blob": null,
+      "verified": true
+    }
+  ]
 }

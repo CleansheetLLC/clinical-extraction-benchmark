@@ -4,9 +4,10 @@
   "workflow": "pediatrics",
   "source": "original",
   "verified": false,
-  "audio_file": null,
   "annotation_file": null,
-  "specialty": ["pediatrics"],
+  "specialty": [
+    "pediatrics"
+  ],
   "entity_counts": {
     "Condition": 1,
     "Observation": 4,
@@ -15,5 +16,18 @@
   },
   "annotators": [],
   "difficulty": "moderate",
-  "notes": "Well child visit. Tests pediatric-specific extraction: developmental milestones, growth percentiles, immunization status, historical procedures (myringotomy tubes). Source: v2f test fixtures."
+  "notes": "Well child visit. Tests pediatric-specific extraction: developmental milestones, growth percentiles, immunization status, historical procedures (myringotomy tubes). Source: v2f test fixtures.",
+  "audio_files": [
+    {
+      "path": "audio/en/en-pediatrics-001/en-pediatrics-001-legacy.m4a",
+      "contributor": "unknown",
+      "dialect": null,
+      "mic_label": null,
+      "noise_condition": null,
+      "duration_seconds": 94.784,
+      "submitted_at": null,
+      "source_blob": null,
+      "verified": true
+    }
+  ]
 }

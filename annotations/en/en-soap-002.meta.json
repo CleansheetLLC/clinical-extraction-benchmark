@@ -4,9 +4,10 @@
   "workflow": "soap",
   "source": "original",
   "verified": false,
-  "audio_file": null,
   "annotation_file": null,
-  "specialty": ["family-medicine"],
+  "specialty": [
+    "family-medicine"
+  ],
   "entity_counts": {
     "Condition": 1,
     "MedicationRequest": 1,
@@ -14,5 +15,18 @@
   },
   "annotators": [],
   "difficulty": "simple",
-  "notes": "Strep pharyngitis SOAP note. Simple acute encounter with positive rapid test and new prescription. Source: v2f test fixtures."
+  "notes": "Strep pharyngitis SOAP note. Simple acute encounter with positive rapid test and new prescription. Source: v2f test fixtures.",
+  "audio_files": [
+    {
+      "path": "audio/en/en-soap-002/en-soap-002-legacy.m4a",
+      "contributor": "unknown",
+      "dialect": null,
+      "mic_label": null,
+      "noise_condition": null,
+      "duration_seconds": 46.208,
+      "submitted_at": null,
+      "source_blob": null,
+      "verified": true
+    }
+  ]
 }

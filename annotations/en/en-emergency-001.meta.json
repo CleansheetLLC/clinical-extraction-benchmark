@@ -4,9 +4,11 @@
   "workflow": "emergency",
   "source": "original",
   "verified": false,
-  "audio_file": null,
   "annotation_file": null,
-  "specialty": ["emergency-medicine", "cardiology"],
+  "specialty": [
+    "emergency-medicine",
+    "cardiology"
+  ],
   "entity_counts": {
     "Condition": 3,
     "MedicationRequest": 2,
@@ -17,5 +19,18 @@
   },
   "annotators": [],
   "difficulty": "moderate",
-  "notes": "ED chest pain with ACS workup. Brief but includes family hx, social hx, allergy, and new orders. Source: v2f test fixtures."
+  "notes": "ED chest pain with ACS workup. Brief but includes family hx, social hx, allergy, and new orders. Source: v2f test fixtures.",
+  "audio_files": [
+    {
+      "path": "audio/en/en-emergency-001/en-emergency-001-legacy.m4a",
+      "contributor": "unknown",
+      "dialect": null,
+      "mic_label": null,
+      "noise_condition": null,
+      "duration_seconds": 78.528,
+      "submitted_at": null,
+      "source_blob": null,
+      "verified": true
+    }
+  ]
 }

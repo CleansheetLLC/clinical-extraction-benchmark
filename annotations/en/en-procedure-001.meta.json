@@ -4,9 +4,10 @@
   "workflow": "procedure",
   "source": "original",
   "verified": false,
-  "audio_file": null,
   "annotation_file": null,
-  "specialty": ["gastroenterology"],
+  "specialty": [
+    "gastroenterology"
+  ],
   "entity_counts": {
     "Procedure": 2,
     "Condition": 1,
@@ -14,5 +15,18 @@
   },
   "annotators": [],
   "difficulty": "moderate",
-  "notes": "Colonoscopy procedure note with polyp findings and polypectomy. Tests procedure-specific extraction (findings, specimens, recommendations). Source: v2f test fixtures."
+  "notes": "Colonoscopy procedure note with polyp findings and polypectomy. Tests procedure-specific extraction (findings, specimens, recommendations). Source: v2f test fixtures.",
+  "audio_files": [
+    {
+      "path": "audio/en/en-procedure-001/en-procedure-001-legacy.m4a",
+      "contributor": "unknown",
+      "dialect": null,
+      "mic_label": null,
+      "noise_condition": null,
+      "duration_seconds": 75.968,
+      "submitted_at": null,
+      "source_blob": null,
+      "verified": true
+    }
+  ]
 }

@@ -4,9 +4,10 @@
   "workflow": "intake",
   "source": "original",
   "verified": false,
-  "audio_file": null,
   "annotation_file": null,
-  "specialty": ["internal-medicine"],
+  "specialty": [
+    "internal-medicine"
+  ],
   "entity_counts": {
     "Condition": 4,
     "MedicationStatement": 5,
@@ -17,5 +18,18 @@
   },
   "annotators": [],
   "difficulty": "moderate",
-  "notes": "New patient intake with full history. Rich in allergies (drug + food), family history, social history, and lab orders. Source: v2f test fixtures."
+  "notes": "New patient intake with full history. Rich in allergies (drug + food), family history, social history, and lab orders. Source: v2f test fixtures.",
+  "audio_files": [
+    {
+      "path": "audio/en/en-intake-001/en-intake-001-legacy.m4a",
+      "contributor": "unknown",
+      "dialect": null,
+      "mic_label": null,
+      "noise_condition": null,
+      "duration_seconds": 132.16,
+      "submitted_at": null,
+      "source_blob": null,
+      "verified": true
+    }
+  ]
 }

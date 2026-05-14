@@ -4,14 +4,28 @@
   "workflow": "radiology",
   "source": "original",
   "verified": false,
-  "audio_file": null,
   "annotation_file": null,
-  "specialty": ["radiology"],
+  "specialty": [
+    "radiology"
+  ],
   "entity_counts": {
     "Condition": 1,
     "Observation": 1
   },
   "annotators": [],
   "difficulty": "simple",
-  "notes": "Chest x-ray read with structured findings and impression. Tests radiology-specific extraction (imaging findings vs diagnoses). Source: v2f test fixtures."
+  "notes": "Chest x-ray read with structured findings and impression. Tests radiology-specific extraction (imaging findings vs diagnoses). Source: v2f test fixtures.",
+  "audio_files": [
+    {
+      "path": "audio/en/en-radiology-001/en-radiology-001-legacy.m4a",
+      "contributor": "unknown",
+      "dialect": null,
+      "mic_label": null,
+      "noise_condition": null,
+      "duration_seconds": 46.848,
+      "submitted_at": null,
+      "source_blob": null,
+      "verified": true
+    }
+  ]
 }

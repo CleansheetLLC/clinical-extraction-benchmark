@@ -4,7 +4,6 @@
   "workflow": "handoff",
   "source": "original",
   "verified": false,
-  "audio_file": "audio/en/en-handoff-004.m4a",
   "annotation_file": null,
   "specialty": [
     "internal-medicine",
@@ -22,5 +21,18 @@
   },
   "annotators": [],
   "difficulty": "simple",
-  "notes": "End-of-day ambulatory clinic handoff to on-call covering 3 patients: uncontrolled hypertension needing callback, pending PSA result requiring action if elevated, and metformin refill pending renal function check. Tests extraction from brief, conversational outpatient handoff with conditional action items."
+  "notes": "End-of-day ambulatory clinic handoff to on-call covering 3 patients: uncontrolled hypertension needing callback, pending PSA result requiring action if elevated, and metformin refill pending renal function check. Tests extraction from brief, conversational outpatient handoff with conditional action items.",
+  "audio_files": [
+    {
+      "path": "audio/en/en-handoff-004/en-handoff-004-legacy.m4a",
+      "contributor": "unknown",
+      "dialect": null,
+      "mic_label": null,
+      "noise_condition": null,
+      "duration_seconds": 132.095,
+      "submitted_at": null,
+      "source_blob": null,
+      "verified": true
+    }
+  ]
 }

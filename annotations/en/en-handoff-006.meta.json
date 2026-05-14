@@ -4,7 +4,6 @@
   "workflow": "handoff",
   "source": "original",
   "verified": false,
-  "audio_file": "audio/en/en-handoff-006.m4a",
   "annotation_file": null,
   "specialty": [
     "oncology",
@@ -26,5 +25,18 @@
   },
   "annotators": [],
   "difficulty": "complex",
-  "notes": "Charge nurse handoff to incoming charge covering 5 patients across different acuity levels: comfort-care pancreatic cancer, post-STEMI with stent, sickle cell vasoocclusive crisis, post-cholecystectomy with fever, and advanced Parkinson's with aspiration pneumonia. Includes staffing concerns and operational details mixed with clinical data. Tests extraction from the longest and most complex multi-patient handoff with interleaved clinical and administrative content."
+  "notes": "Charge nurse handoff to incoming charge covering 5 patients across different acuity levels: comfort-care pancreatic cancer, post-STEMI with stent, sickle cell vasoocclusive crisis, post-cholecystectomy with fever, and advanced Parkinson's with aspiration pneumonia. Includes staffing concerns and operational details mixed with clinical data. Tests extraction from the longest and most complex multi-patient handoff with interleaved clinical and administrative content.",
+  "audio_files": [
+    {
+      "path": "audio/en/en-handoff-006/en-handoff-006-legacy.m4a",
+      "contributor": "unknown",
+      "dialect": null,
+      "mic_label": null,
+      "noise_condition": null,
+      "duration_seconds": 451.319,
+      "submitted_at": null,
+      "source_blob": null,
+      "verified": true
+    }
+  ]
 }

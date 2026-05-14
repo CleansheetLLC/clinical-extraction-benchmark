@@ -4,9 +4,11 @@
   "workflow": "lab_review",
   "source": "original",
   "verified": false,
-  "audio_file": null,
   "annotation_file": null,
-  "specialty": ["internal-medicine", "nephrology"],
+  "specialty": [
+    "internal-medicine",
+    "nephrology"
+  ],
   "entity_counts": {
     "Condition": 3,
     "MedicationRequest": 1,
@@ -14,5 +16,18 @@
   },
   "annotators": [],
   "difficulty": "moderate",
-  "notes": "Lab review with full CMP, A1c, and lipid panel. High observation count tests numeric extraction accuracy. Source: v2f test fixtures."
+  "notes": "Lab review with full CMP, A1c, and lipid panel. High observation count tests numeric extraction accuracy. Source: v2f test fixtures.",
+  "audio_files": [
+    {
+      "path": "audio/en/en-labreview-001/en-labreview-001-legacy.m4a",
+      "contributor": "unknown",
+      "dialect": null,
+      "mic_label": null,
+      "noise_condition": null,
+      "duration_seconds": 74.304,
+      "submitted_at": null,
+      "source_blob": null,
+      "verified": true
+    }
+  ]
 }

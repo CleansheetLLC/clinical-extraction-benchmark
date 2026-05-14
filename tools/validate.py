@@ -201,7 +201,7 @@ def validate_metadata(path: Path) -> list[str]:
         "intake", "followup", "discharge", "procedure",
         "radiology", "lab_review", "cardiology", "neurology",
         "pediatrics", "icu", "respiratory", "consult",
-        "progress", "recommendations",
+        "progress", "recommendations", "handoff", "dialogue",
     }
     if "workflow" in meta and meta["workflow"] not in valid_workflows:
         errors.append(f"workflow '{meta['workflow']}' not in valid set")
@@ -213,6 +213,30 @@ def validate_metadata(path: Path) -> list[str]:
     valid_difficulties = {"simple", "moderate", "complex"}
     if "difficulty" in meta and meta["difficulty"] not in valid_difficulties:
         errors.append(f"difficulty '{meta['difficulty']}' not in {valid_difficulties}")
+
+    # audio_files (new shape) — validate path existence and required fields
+    if "audio_files" in meta:
+        if not isinstance(meta["audio_files"], list):
+            errors.append("audio_files must be an array")
+        else:
+            for i, af in enumerate(meta["audio_files"]):
+                if not isinstance(af, dict):
+                    errors.append(f"audio_files[{i}]: must be an object")
+                    continue
+                if "path" not in af:
+                    errors.append(f"audio_files[{i}]: missing required 'path'")
+                    continue
+                audio_path = REPO_ROOT / af["path"]
+                if not audio_path.exists():
+                    errors.append(f"audio_files[{i}]: path '{af['path']}' does not exist on disk")
+
+    # audio_file (legacy single field) — warn only, not fatal
+    if meta.get("audio_file") and not meta.get("audio_files"):
+        print(
+            f"  warning: 'audio_file' is deprecated; migrate to 'audio_files' via "
+            f"tools/migrate-audio-layout.py",
+            file=sys.stderr,
+        )
 
     # Check entity_counts match annotation if annotation_file is specified
     if meta.get("annotation_file") and "entity_counts" in meta:

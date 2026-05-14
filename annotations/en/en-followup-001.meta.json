@@ -4,9 +4,10 @@
   "workflow": "followup",
   "source": "original",
   "verified": false,
-  "audio_file": null,
   "annotation_file": null,
-  "specialty": ["internal-medicine"],
+  "specialty": [
+    "internal-medicine"
+  ],
   "entity_counts": {
     "Condition": 1,
     "MedicationStatement": 1,
@@ -14,5 +15,18 @@
   },
   "annotators": [],
   "difficulty": "simple",
-  "notes": "Brief diabetes follow-up. Minimal entities, good baseline for simple extraction. Source: v2f test fixtures."
+  "notes": "Brief diabetes follow-up. Minimal entities, good baseline for simple extraction. Source: v2f test fixtures.",
+  "audio_files": [
+    {
+      "path": "audio/en/en-followup-001/en-followup-001-legacy.m4a",
+      "contributor": "unknown",
+      "dialect": null,
+      "mic_label": null,
+      "noise_condition": null,
+      "duration_seconds": 38.4,
+      "submitted_at": null,
+      "source_blob": null,
+      "verified": true
+    }
+  ]
 }
