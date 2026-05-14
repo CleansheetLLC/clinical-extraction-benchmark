@@ -1,0 +1,20 @@
+{
+  "id": "es-followup-001",
+  "language": "es",
+  "workflow": "followup",
+  "source": "original",
+  "verified": false,
+  "annotation_file": null,
+  "specialty": [
+    "internal-medicine"
+  ],
+  "entity_counts": {
+    "Condition": 1,
+    "MedicationStatement": 1,
+    "Observation": 3
+  },
+  "annotators": [],
+  "difficulty": "simple",
+  "notes": "Brief diabetes follow-up. Minimal entities, good baseline for simple extraction. Source: v2f test fixtures.",
+  "audio_files": []
+}

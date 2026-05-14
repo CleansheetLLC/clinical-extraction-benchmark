@@ -1,0 +1,20 @@
+{
+  "id": "fr-respiratory-001",
+  "language": "fr",
+  "workflow": "respiratory",
+  "source": "original",
+  "verified": false,
+  "annotation_file": null,
+  "specialty": [
+    "pulmonology",
+    "critical-care"
+  ],
+  "entity_counts": {
+    "Observation": 8,
+    "Procedure": 1
+  },
+  "annotators": [],
+  "difficulty": "moderate",
+  "notes": "Respiratory therapy assessment with ventilator settings and ABG values. Tests extraction of device parameters and blood gas components. Source: v2f test fixtures.",
+  "audio_files": []
+}

@@ -1,0 +1,43 @@
+{
+  "id": "de-general-001",
+  "language": "de",
+  "workflow": "general",
+  "source": "original",
+  "verified": false,
+  "annotation_file": null,
+  "specialty": [
+    "family-medicine"
+  ],
+  "entity_counts": {
+    "Condition": 2,
+    "MedicationStatement": 1,
+    "Observation": 5
+  },
+  "annotators": [],
+  "difficulty": "simple",
+  "notes": "URI office visit. Tests extraction of acute viral diagnosis alongside chronic seasonal allergies. Source: v2f test fixtures.",
+  "audio_files": [
+    {
+      "path": "audio/de/de-general-001/de-general-001-legacy.m4a",
+      "contributor": "unknown",
+      "dialect": null,
+      "mic_label": null,
+      "noise_condition": null,
+      "duration_seconds": 68.773,
+      "submitted_at": null,
+      "source_blob": null,
+      "verified": true
+    },
+    {
+      "path": "audio/de/de-general-001/20260511T090931_9b6ywet4.m4a",
+      "contributor": "anonymous",
+      "dialect": null,
+      "mic_label": null,
+      "noise_condition": null,
+      "duration_seconds": 68.773,
+      "submitted_at": null,
+      "source_blob": null,
+      "verified": false
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "es-procedure-001",
+  "language": "es",
+  "workflow": "procedure",
+  "source": "original",
+  "verified": false,
+  "annotation_file": null,
+  "specialty": [
+    "gastroenterology"
+  ],
+  "entity_counts": {
+    "Procedure": 2,
+    "Condition": 1,
+    "Observation": 1
+  },
+  "annotators": [],
+  "difficulty": "moderate",
+  "notes": "Colonoscopy procedure note with polyp findings and polypectomy. Tests procedure-specific extraction (findings, specimens, recommendations). Source: v2f test fixtures.",
+  "audio_files": []
+}

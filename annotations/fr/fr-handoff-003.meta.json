@@ -1,0 +1,29 @@
+{
+  "id": "fr-handoff-003",
+  "language": "fr",
+  "workflow": "handoff",
+  "source": "original",
+  "verified": false,
+  "annotation_file": null,
+  "specialty": [
+    "critical-care",
+    "infectious-disease",
+    "pulmonology",
+    "cardiology",
+    "neurology"
+  ],
+  "entity_counts": {
+    "Condition": 9,
+    "MedicationStatement": 15,
+    "MedicationRequest": 3,
+    "Observation": 25,
+    "AllergyIntolerance": 0,
+    "Procedure": 5,
+    "ServiceRequest": 7,
+    "FamilyMemberHistory": 0
+  },
+  "annotators": [],
+  "difficulty": "complex",
+  "notes": "ICU bedside handoff covering 3 critically ill patients: septic shock on dual pressors post-Hartmann with open abdomen, severe ARDS on vent with prone cycling and ECMO consideration, and post-cardiac arrest on TTM with neuro prognostication. Tests extraction of complex ICU data including ventilator settings, vasopressor dosing, and trending lab values across multiple patients.",
+  "audio_files": []
+}

@@ -1,0 +1,30 @@
+{
+  "id": "es-handoff-006",
+  "language": "es",
+  "workflow": "handoff",
+  "source": "original",
+  "verified": false,
+  "annotation_file": null,
+  "specialty": [
+    "oncology",
+    "cardiology",
+    "hematology",
+    "general-surgery",
+    "neurology",
+    "palliative-care"
+  ],
+  "entity_counts": {
+    "Condition": 14,
+    "MedicationStatement": 20,
+    "MedicationRequest": 6,
+    "Observation": 18,
+    "AllergyIntolerance": 1,
+    "Procedure": 3,
+    "ServiceRequest": 5,
+    "FamilyMemberHistory": 0
+  },
+  "annotators": [],
+  "difficulty": "complex",
+  "notes": "Charge nurse handoff to incoming charge covering 5 patients across different acuity levels: comfort-care pancreatic cancer, post-STEMI with stent, sickle cell vasoocclusive crisis, post-cholecystectomy with fever, and advanced Parkinson's with aspiration pneumonia. Includes staffing concerns and operational details mixed with clinical data. Tests extraction from the longest and most complex multi-patient handoff with interleaved clinical and administrative content.",
+  "audio_files": []
+}

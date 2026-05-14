@@ -1,0 +1,26 @@
+{
+  "id": "es-hp-001",
+  "language": "es",
+  "workflow": "hp",
+  "source": "original",
+  "verified": false,
+  "annotation_file": null,
+  "specialty": [
+    "internal-medicine",
+    "cardiology"
+  ],
+  "entity_counts": {
+    "Condition": 13,
+    "MedicationStatement": 15,
+    "MedicationRequest": 3,
+    "Observation": 17,
+    "AllergyIntolerance": 4,
+    "FamilyMemberHistory": 5,
+    "ServiceRequest": 3,
+    "Procedure": 1
+  },
+  "annotators": [],
+  "difficulty": "complex",
+  "notes": "Stress-test scenario: 78yo CHF admission with 12+ comorbidities, polypharmacy (15 meds), 4 allergies, 5 family history entries, 10+ labs, new orders. Source: v2f test fixtures.",
+  "audio_files": []
+}

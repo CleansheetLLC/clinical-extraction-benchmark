@@ -1,0 +1,22 @@
+{
+  "id": "fr-hp-002",
+  "language": "fr",
+  "workflow": "hp",
+  "source": "original",
+  "verified": false,
+  "annotation_file": null,
+  "specialty": [
+    "internal-medicine"
+  ],
+  "entity_counts": {
+    "Condition": 3,
+    "MedicationStatement": 2,
+    "Observation": 5,
+    "FamilyMemberHistory": 2,
+    "ServiceRequest": 3
+  },
+  "annotators": [],
+  "difficulty": "simple",
+  "notes": "Routine annual physical. Straightforward chronic disease management with lab orders. Source: v2f test fixtures.",
+  "audio_files": []
+}

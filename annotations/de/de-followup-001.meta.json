@@ -1,0 +1,43 @@
+{
+  "id": "de-followup-001",
+  "language": "de",
+  "workflow": "followup",
+  "source": "original",
+  "verified": false,
+  "annotation_file": null,
+  "specialty": [
+    "internal-medicine"
+  ],
+  "entity_counts": {
+    "Condition": 1,
+    "MedicationStatement": 1,
+    "Observation": 3
+  },
+  "annotators": [],
+  "difficulty": "simple",
+  "notes": "Brief diabetes follow-up. Minimal entities, good baseline for simple extraction. Source: v2f test fixtures.",
+  "audio_files": [
+    {
+      "path": "audio/de/de-followup-001/de-followup-001-legacy.m4a",
+      "contributor": "unknown",
+      "dialect": null,
+      "mic_label": null,
+      "noise_condition": null,
+      "duration_seconds": 41.133,
+      "submitted_at": null,
+      "source_blob": null,
+      "verified": true
+    },
+    {
+      "path": "audio/de/de-followup-001/20260511T090750_uykefn45.m4a",
+      "contributor": "anonymous",
+      "dialect": null,
+      "mic_label": null,
+      "noise_condition": null,
+      "duration_seconds": 41.133,
+      "submitted_at": null,
+      "source_blob": null,
+      "verified": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "es-neurology-001",
+  "language": "es",
+  "workflow": "neurology",
+  "source": "original",
+  "verified": false,
+  "annotation_file": null,
+  "specialty": [
+    "neurology"
+  ],
+  "entity_counts": {
+    "Condition": 1,
+    "MedicationRequest": 1,
+    "Observation": 1,
+    "FamilyMemberHistory": 1,
+    "ServiceRequest": 1
+  },
+  "annotators": [],
+  "difficulty": "moderate",
+  "notes": "New onset seizure consult. Tests provisional diagnosis, negative findings (MRI normal, labs unremarkable), and family history extraction. Source: v2f test fixtures.",
+  "audio_files": []
+}

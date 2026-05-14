@@ -1,0 +1,21 @@
+{
+  "id": "de-soap-001",
+  "language": "de",
+  "workflow": "soap",
+  "source": "original",
+  "verified": false,
+  "annotation_file": null,
+  "specialty": [
+    "internal-medicine"
+  ],
+  "entity_counts": {
+    "Condition": 3,
+    "MedicationStatement": 3,
+    "Observation": 9,
+    "AllergyIntolerance": 1
+  },
+  "annotators": [],
+  "difficulty": "simple",
+  "notes": "Standard SOAP follow-up for chronic disease management (HTN, T2DM, hyperlipidemia). Includes vitals and recent labs. No orders, no procedures. Baseline benchmark scenario.",
+  "audio_files": []
+}

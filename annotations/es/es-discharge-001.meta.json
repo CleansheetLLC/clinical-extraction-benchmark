@@ -1,0 +1,21 @@
+{
+  "id": "es-discharge-001",
+  "language": "es",
+  "workflow": "discharge",
+  "source": "original",
+  "verified": false,
+  "annotation_file": null,
+  "specialty": [
+    "internal-medicine",
+    "pulmonology"
+  ],
+  "entity_counts": {
+    "Condition": 1,
+    "MedicationRequest": 2,
+    "Observation": 0
+  },
+  "annotators": [],
+  "difficulty": "simple",
+  "notes": "Discharge summary for community-acquired pneumonia. Tests resolved condition status and discharge medication extraction. Source: v2f test fixtures.",
+  "audio_files": []
+}

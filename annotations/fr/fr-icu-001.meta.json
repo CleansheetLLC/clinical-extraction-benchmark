@@ -1,0 +1,22 @@
+{
+  "id": "fr-icu-001",
+  "language": "fr",
+  "workflow": "icu",
+  "source": "original",
+  "verified": false,
+  "annotation_file": null,
+  "specialty": [
+    "critical-care",
+    "infectious-disease"
+  ],
+  "entity_counts": {
+    "Condition": 3,
+    "MedicationStatement": 1,
+    "MedicationRequest": 1,
+    "Observation": 7
+  },
+  "annotators": [],
+  "difficulty": "complex",
+  "notes": "ICU progress note for septic shock. Tests trending lab values (WBC, lactate, creatinine, procalcitonin), vasopressor management, and antibiotic de-escalation. Source: v2f test fixtures.",
+  "audio_files": []
+}

@@ -1,0 +1,22 @@
+{
+  "id": "de-consult-001",
+  "language": "de",
+  "workflow": "consult",
+  "source": "original",
+  "verified": false,
+  "annotation_file": null,
+  "specialty": [
+    "cardiology"
+  ],
+  "entity_counts": {
+    "Condition": 2,
+    "MedicationStatement": 1,
+    "Observation": 2,
+    "FamilyMemberHistory": 1,
+    "ServiceRequest": 1
+  },
+  "annotators": [],
+  "difficulty": "moderate",
+  "notes": "Cardiology consultation for chest pain. Tests provisional vs confirmed diagnosis distinction (possible stable angina). Source: v2f test fixtures.",
+  "audio_files": []
+}

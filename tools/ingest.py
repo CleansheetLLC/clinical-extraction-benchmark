@@ -323,18 +323,21 @@ def process_take(
     updated, reason = append_audio_entry(lang, tid, entry)
     if updated:
         print(f"      annotations/{lang}/{tid}.meta.json updated")
+        # Delete blobs only after on-disk write + meta update succeed
+        delete_blob(take["blob_name"])
+        if meta_blob:
+            delete_blob(meta_blob["blob_name"])
+        print(f"      blob deleted from Azure")
+        print()
+        return "ingested"
     else:
         print(f"      meta update: {reason}")
         if reason == "meta-not-found":
-            print(f"      warning: no annotation for {tid} — audio saved but not catalogued")
-
-    # Delete blobs only after on-disk write + meta update succeed
-    delete_blob(take["blob_name"])
-    if meta_blob:
-        delete_blob(meta_blob["blob_name"])
-    print(f"      blob deleted from Azure")
-    print()
-    return "ingested"
+            print(f"      WARNING: no annotation for {tid} — audio saved on disk but NOT catalogued; blob retained for retry")
+        else:
+            print(f"      blob retained for retry")
+        print()
+        return "saved-but-uncatalogued"
 
 
 def main() -> None:

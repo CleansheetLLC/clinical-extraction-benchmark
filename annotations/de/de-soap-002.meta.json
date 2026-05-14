@@ -1,0 +1,43 @@
+{
+  "id": "de-soap-002",
+  "language": "de",
+  "workflow": "soap",
+  "source": "original",
+  "verified": false,
+  "annotation_file": null,
+  "specialty": [
+    "family-medicine"
+  ],
+  "entity_counts": {
+    "Condition": 1,
+    "MedicationRequest": 1,
+    "Observation": 3
+  },
+  "annotators": [],
+  "difficulty": "simple",
+  "notes": "Strep pharyngitis SOAP note. Simple acute encounter with positive rapid test and new prescription. Source: v2f test fixtures.",
+  "audio_files": [
+    {
+      "path": "audio/de/de-soap-002/de-soap-002-legacy.m4a",
+      "contributor": "unknown",
+      "dialect": null,
+      "mic_label": null,
+      "noise_condition": null,
+      "duration_seconds": 48.973,
+      "submitted_at": null,
+      "source_blob": null,
+      "verified": true
+    },
+    {
+      "path": "audio/de/de-soap-002/20260511T091222_81xuofxa.m4a",
+      "contributor": "anonymous",
+      "dialect": null,
+      "mic_label": null,
+      "noise_condition": null,
+      "duration_seconds": 48.973,
+      "submitted_at": null,
+      "source_blob": null,
+      "verified": false
+    }
+  ]
+}

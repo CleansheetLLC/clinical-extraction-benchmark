@@ -1,0 +1,21 @@
+{
+  "id": "es-pediatrics-001",
+  "language": "es",
+  "workflow": "pediatrics",
+  "source": "original",
+  "verified": false,
+  "annotation_file": null,
+  "specialty": [
+    "pediatrics"
+  ],
+  "entity_counts": {
+    "Condition": 1,
+    "Observation": 4,
+    "AllergyIntolerance": 1,
+    "Procedure": 1
+  },
+  "annotators": [],
+  "difficulty": "moderate",
+  "notes": "Well child visit. Tests pediatric-specific extraction: developmental milestones, growth percentiles, immunization status, historical procedures (myringotomy tubes). Source: v2f test fixtures.",
+  "audio_files": []
+}
