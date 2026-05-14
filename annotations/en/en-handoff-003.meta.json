@@ -36,6 +36,17 @@
       "submitted_at": null,
       "source_blob": null,
       "verified": true
+    },
+    {
+      "path": "audio/en/en-handoff-003/20260508T114528_i1u3qckh.m4a",
+      "contributor": "Paul Galjan",
+      "dialect": "en-US",
+      "mic_label": "HD Pro Webcam C920",
+      "noise_condition": "quiet-room",
+      "duration_seconds": 422,
+      "submitted_at": "2026-05-08T11:45:29.351Z",
+      "source_blob": "contributions/en/en-handoff-003/20260508T114528_i1u3qckh.webm",
+      "verified": false
     }
   ]
 }

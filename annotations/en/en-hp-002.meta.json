@@ -29,6 +29,17 @@
       "submitted_at": null,
       "source_blob": null,
       "verified": true
+    },
+    {
+      "path": "audio/en/en-hp-002/20260513T150406_4qvnfguu.m4a",
+      "contributor": "anonymous",
+      "dialect": "en-US",
+      "mic_label": "Default - Internal Mic",
+      "noise_condition": "quiet-room",
+      "duration_seconds": 79,
+      "submitted_at": "2026-05-13T15:04:06.838Z",
+      "source_blob": "contributions/en/en-hp-002/20260513T150406_4qvnfguu.webm",
+      "verified": false
     }
   ]
 }

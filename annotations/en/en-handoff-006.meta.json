@@ -37,6 +37,17 @@
       "submitted_at": null,
       "source_blob": null,
       "verified": true
+    },
+    {
+      "path": "audio/en/en-handoff-006/20260513T150227_19zvde86.m4a",
+      "contributor": "LP",
+      "dialect": "en-US",
+      "mic_label": "Default - Internal Mic",
+      "noise_condition": "quiet-room",
+      "duration_seconds": 451,
+      "submitted_at": "2026-05-13T15:02:28.353Z",
+      "source_blob": "contributions/en/en-handoff-006/20260513T150227_19zvde86.webm",
+      "verified": false
     }
   ]
 }

@@ -33,6 +33,17 @@
       "submitted_at": null,
       "source_blob": null,
       "verified": true
+    },
+    {
+      "path": "audio/en/en-hp-001/20260508T113322_kwh1p5di.m4a",
+      "contributor": "Paul Galjan",
+      "dialect": "en-US",
+      "mic_label": "HD Pro Webcam C920",
+      "noise_condition": "quiet-room",
+      "duration_seconds": 437,
+      "submitted_at": "2026-05-08T11:33:23.460Z",
+      "source_blob": "contributions/en/en-hp-001/20260508T113322_kwh1p5di.webm",
+      "verified": false
     }
   ]
 }
