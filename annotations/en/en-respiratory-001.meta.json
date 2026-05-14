@@ -18,17 +18,6 @@
   "notes": "Respiratory therapy assessment with ventilator settings and ABG values. Tests extraction of device parameters and blood gas components. Source: v2f test fixtures.",
   "audio_files": [
     {
-      "path": "audio/en/en-respiratory-001/en-respiratory-001-legacy.m4a",
-      "contributor": "unknown",
-      "dialect": null,
-      "mic_label": null,
-      "noise_condition": null,
-      "duration_seconds": 73.139,
-      "submitted_at": null,
-      "source_blob": null,
-      "verified": true
-    },
-    {
       "path": "audio/en/en-respiratory-001/20260513T150602_7khqc0le.m4a",
       "contributor": "LP",
       "dialect": "en-US",

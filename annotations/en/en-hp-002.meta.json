@@ -20,17 +20,6 @@
   "notes": "Routine annual physical. Straightforward chronic disease management with lab orders. Source: v2f test fixtures.",
   "audio_files": [
     {
-      "path": "audio/en/en-hp-002/en-hp-002-legacy.m4a",
-      "contributor": "unknown",
-      "dialect": null,
-      "mic_label": null,
-      "noise_condition": null,
-      "duration_seconds": 79.319,
-      "submitted_at": null,
-      "source_blob": null,
-      "verified": true
-    },
-    {
       "path": "audio/en/en-hp-002/20260513T150406_4qvnfguu.m4a",
       "contributor": "anonymous",
       "dialect": "en-US",

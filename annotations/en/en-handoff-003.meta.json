@@ -27,17 +27,6 @@
   "notes": "ICU bedside handoff covering 3 critically ill patients: septic shock on dual pressors post-Hartmann with open abdomen, severe ARDS on vent with prone cycling and ECMO consideration, and post-cardiac arrest on TTM with neuro prognostication. Tests extraction of complex ICU data including ventilator settings, vasopressor dosing, and trending lab values across multiple patients.",
   "audio_files": [
     {
-      "path": "audio/en/en-handoff-003/en-handoff-003-legacy.m4a",
-      "contributor": "unknown",
-      "dialect": null,
-      "mic_label": null,
-      "noise_condition": null,
-      "duration_seconds": 422.273,
-      "submitted_at": null,
-      "source_blob": null,
-      "verified": true
-    },
-    {
       "path": "audio/en/en-handoff-003/20260508T114528_i1u3qckh.m4a",
       "contributor": "Paul Galjan",
       "dialect": "en-US",

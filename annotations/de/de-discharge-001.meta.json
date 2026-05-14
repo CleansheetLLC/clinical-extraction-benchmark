@@ -19,17 +19,6 @@
   "notes": "Discharge summary for community-acquired pneumonia. Tests resolved condition status and discharge medication extraction. Source: v2f test fixtures.",
   "audio_files": [
     {
-      "path": "audio/de/de-discharge-001/de-discharge-001-legacy.m4a",
-      "contributor": "unknown",
-      "dialect": null,
-      "mic_label": null,
-      "noise_condition": null,
-      "duration_seconds": 54.733,
-      "submitted_at": null,
-      "source_blob": null,
-      "verified": true
-    },
-    {
       "path": "audio/de/de-discharge-001/20260511T090515_bl1yaccc.m4a",
       "contributor": "anonymous",
       "dialect": null,

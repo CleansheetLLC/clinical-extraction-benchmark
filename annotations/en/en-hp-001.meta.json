@@ -24,17 +24,6 @@
   "notes": "Stress-test scenario: 78yo CHF admission with 12+ comorbidities, polypharmacy (15 meds), 4 allergies, 5 family history entries, 10+ labs, new orders. Source: v2f test fixtures.",
   "audio_files": [
     {
-      "path": "audio/en/en-hp-001/en-hp-001-legacy.m4a",
-      "contributor": "unknown",
-      "dialect": null,
-      "mic_label": null,
-      "noise_condition": null,
-      "duration_seconds": 436.673,
-      "submitted_at": null,
-      "source_blob": null,
-      "verified": true
-    },
-    {
       "path": "audio/en/en-hp-001/20260508T113322_kwh1p5di.m4a",
       "contributor": "Paul Galjan",
       "dialect": "en-US",
